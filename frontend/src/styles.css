@@ -31,7 +31,7 @@
   src: url('/fonts/MONTSERRAT-REGULAR.TTF');
 }
 
-h1, h2, h3 {
+h1, h2, h3, span {
   font-family: Brastag-Bold;
   letter-spacing: 0.07em;
   color: var(--secondary-green);
@@ -43,8 +43,7 @@ p {
   color: var(--primary-green);
 }
 
-ul, li, span, a {
+ul, li,a {
   font-family: Montserrat-regular;
   letter-spacing: 0.02em;
-
 }

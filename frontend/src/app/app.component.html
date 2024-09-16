@@ -1,113 +1,221 @@
-<header class="sticky top-0 left-0 w-full bg-background bg-opacity-80 p-8 z-10">
-  <div class="relative w-full max-w-[1280px] mx-auto">
+<header class="sticky top-0 left-0 w-full bg-white shadow-sm shadow-primary-green p-6 z-30">
 
-    <!-- Conteneur pour le logo et le menu de navigation -->
-    <div class="relative flex flex-col items-center">
+	<div class="flex justify-between md:grid md:grid-cols-[1fr_128px_1fr] items-center gap-8">
+		<!-- Liens de navigation à gauche du logo -->
+		<div class="hidden md:flex flex-grow justify-start md:justify-end gap-2 text-secondary-green">
+			<a routerLink="/home" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"
+			   [ngClass]="{'active': isActive('/home')}">
+				ACCUEIL
+			</a>
+			<a routerLink="/la-dermopigmentation-réparatrice"
+			   class="text-sm px-4 py-2 whitespace-nowrap underline-animation"
+			   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">
+				LA DERMOPIGMENTATION REPARATRICE
+			</a>
+		</div>
+		<div><img src="/logo-romacair.png" alt="logo romacair" class="w-20 md:w-32"/></div>
+		<div class="flexjustify-end">
+			<!-- Liens de navigation à droite du logo -->
+			<div class="hidden md:flex flex-grow justify-end md:justify-start gap-2 text-secondary-green">
+				<a routerLink="/tarifs" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"
+				   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>
+				<a [routerLink]="['/a-propos']" fragment="partenaires"
+				   class="text-sm px-4 py-2 whitespace-nowrap underline-animation">A PROPOS</a>
+				<a routerLink="/contact" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"
+				   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>
+				<a routerLink="/faq" class="text-sm px-4 py-2 whitespace-nowrap underline-animation">FAQ</a>
+			</div>
 
-      <!-- Logo centré avec superposition du menu -->
-      <div class="relative flex flex-col items-center mb-8">
-        <img src="/logo-romacair.png" alt="logo romacair" class="w-32 mb-4"/>
+			<div class="md:hidden">
+				<button (click)="toggleMenu()" class="text-secondary-green">
+					<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						 xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							  d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+			</div>
 
-        <!-- Menu de navigation superposé sur le logo -->
-        <div class="absolute top-full mt-2 flex gap-6  text-primary-green">
-          <a href="#" class="hover:text-background hover:bg-primary-green rounded px-4 py-2 whitespace-nowrap">ACCUEIL</a>
-          <a href="#" class="hover:text-background hover:bg-primary-green rounded px-4 py-2 whitespace-nowrap">LE CABINET</a>
-          <a href="#" class="hover:text-background hover:bg-primary-green rounded px-4 py-2 whitespace-nowrap">PRESTATIONS ET TARIFS</a>
-          <a href="#" class="hover:text-background hover:bg-primary-green rounded px-4 py-2 whitespace-nowrap">NOS PARTENAIRES</a>
-          <a href="#" class="hover:text-background hover:bg-primary-green rounded px-4 py-2 whitespace-nowrap">CONTACT</a>
-        </div>
-      </div>
+			<!-- Menu Mobile (affiché/masqué en fonction de isMenuOpen) -->
+			<div [ngClass]="{'hidden': !isMenuOpen}" class="md:hidden w-full bg-white absolute top-full left-0 shadow-lg">
+				<div class="flex flex-col items-center space-y-2 py-4">
+					<a routerLink="/home" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					   [ngClass]="{'active': isActive('/home')}">ACCUEIL</a>
+					<a routerLink="/la-dermopigmentation-réparatrice" (click)="toggleMenu()"
+					   class="text-xs px-4 py-2 underline-animation"
+					   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">LA DERMOPIGMENTATION
+						REPARATRICE</a>
+					<a routerLink="/tarifs" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>
+					<a routerLink="/a-propos" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					   [ngClass]="{'active': isActive('/a-propos')}">A PROPOS</a>
+					<a routerLink="/contact" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>
+					<a routerLink="/faq" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					   [ngClass]="{'active': isActive('/faq')}">FAQ</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-      <!-- Lien réseaux sociaux alignés à droite -->
-      <div class="absolute top-0 right-8 flex gap-4">
-        <a href="https://www.linkedin.com/in/romain-keryhuel-a0911a209/" class="text-primary-green"
-           target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin text-2xl hover:text-secondary-green"></i>
-        </a>
-        <a href="https://www.instagram.com/romcare_tattoo/" class="text-primary-green"
-           target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-square-instagram text-2xl hover:text-secondary-green"></i>
-        </a>
-        <a href="https://www.facebook.com" class="text-primary-green"
-           target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-square-facebook text-2xl hover:text-secondary-green"></i>
-        </a>
-      </div>
+	<div class="flex items-center justify-between mx-auto max-w-screen-xl ">
 
-    </div>
-  </div>
+		<!-- Liens de navigation à gauche du logo -->
+<!--		<div class="hidden md:flex flex-grow justify-start md:justify-end gap-2 text-secondary-green">-->
+<!--			<a routerLink="/home" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"-->
+<!--			   [ngClass]="{'active': isActive('/home')}">-->
+<!--				ACCUEIL-->
+<!--			</a>-->
+<!--			<a routerLink="/la-dermopigmentation-réparatrice"-->
+<!--			   class="text-sm px-4 py-2 whitespace-nowrap underline-animation"-->
+<!--			   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">-->
+<!--				LA DERMOPIGMENTATION REPARATRICE-->
+<!--			</a>-->
+<!--		</div>-->
+
+		<!-- Logo centré -->
+<!--		<div class="flex items-center justify-center px-2 md:px-8 ">-->
+<!--			<img src="/logo-romacair.png" alt="logo romacair" class="w-20 md:w-32"/>-->
+<!--		</div>-->
+
+		<!-- Liens de navigation à droite du logo -->
+<!--		<div class="hidden md:flex flex-grow justify-end md:justify-start gap-2 text-secondary-green">-->
+<!--			<a routerLink="/tarifs" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"-->
+<!--			   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>-->
+<!--			<a [routerLink]="['/a-propos']" fragment="partenaires"-->
+<!--			   class="text-sm px-4 py-2 whitespace-nowrap underline-animation">A PROPOS</a>-->
+<!--			<a routerLink="/contact" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"-->
+<!--			   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>-->
+<!--			<a routerLink="/faq" class="text-sm px-4 py-2 whitespace-nowrap underline-animation">FAQ</a>-->
+<!--		</div>-->
+
+		<!-- Bouton Menu Hamburger pour Mobile -->
+<!--		<div class="md:hidden">-->
+<!--			<button (click)="toggleMenu()" class="text-secondary-green">-->
+<!--				<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"-->
+<!--					 xmlns="http://www.w3.org/2000/svg">-->
+<!--					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--						  d="M4 6h16M4 12h16M4 18h16"></path>-->
+<!--				</svg>-->
+<!--			</button>-->
+<!--		</div>-->
+
+<!--		&lt;!&ndash; Menu Mobile (affiché/masqué en fonction de isMenuOpen) &ndash;&gt;-->
+<!--		<div [ngClass]="{'hidden': !isMenuOpen}" class="md:hidden w-full bg-white absolute top-full left-0 shadow-lg">-->
+<!--			<div class="flex flex-col items-center space-y-2 py-4">-->
+<!--				<a routerLink="/home" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
+<!--				   [ngClass]="{'active': isActive('/home')}">ACCUEIL</a>-->
+<!--				<a routerLink="/la-dermopigmentation-réparatrice" (click)="toggleMenu()"-->
+<!--				   class="text-xs px-4 py-2 underline-animation"-->
+<!--				   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">LA DERMOPIGMENTATION-->
+<!--					REPARATRICE</a>-->
+<!--				<a routerLink="/tarifs" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
+<!--				   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>-->
+<!--				<a routerLink="/a-propos" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
+<!--				   [ngClass]="{'active': isActive('/a-propos')}">A PROPOS</a>-->
+<!--				<a routerLink="/contact" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
+<!--				   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>-->
+<!--				<a routerLink="/faq" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
+<!--				   [ngClass]="{'active': isActive('/faq')}">FAQ</a>-->
+<!--			</div>-->
+<!--		</div>-->
+	</div>
 </header>
 
 
-
-
-<main  class="flex-grow">
-  <router-outlet></router-outlet>
+<main class="flex-grow">
+	<router-outlet></router-outlet>
 </main>
 
-<footer class="w-full p-4 font-normal bg-primary-green">
-  <!-- Wrapper centré et limité à 1280px -->
-  <div class="max-w-[1280px] mx-auto flex gap-40 p-4 bg-primary-green justify-center">
-    <div>
-      <h2 class="text-background font-bold pb-2">HORAIRES D'OUVERTURES :</h2>
-      <ul class="text-background">
-        <li>
-          Lundi :
-        </li>
-        <li>
-          Mardi :
-        </li>
-        <li>
-          Mercredi :
-        </li>
-        <li>
-          Jeudi :
-        </li>
-        <li>
-          Vendredi :
-        </li>
-        <li>
-          Samedi :
-        </li>
-        <li>
-          Dimanche :
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="text-background font-bold pb-2">CONTACT :</h2>
-      <ul class="text-background">
-        <ul>
-          <li class="flex items-center gap-2 mb-2">
-            <i class="fa-duotone fa-solid fa-phone "></i>06 65 94 24 20
-          </li>
-          <li class="flex items-center gap-2 mb-2">
-            <i class="fa-solid fa-envelope"></i>
-            <p class="text-background">𝐫𝐨𝐦𝐜𝐚𝐫𝐞𝐭𝐚𝐭𝐭𝐨𝐨&#64;𝐠𝐦𝐚𝐢𝐥.𝐜𝐨𝐦</p>
-          </li>
-        </ul>
 
-        <li>
-          <a href="https://www.doctolib.fr/infirmier/paris/romain-keryhuel" class="text-background font-bold"
-             target="_blank" rel="noopener noreferrer">
-            <img src="/doctolib.webp" alt="plan d'accès" class="w-20 mb-6 mt-2"/>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="text-background font-bold pb-2">M'Y RENDRE :</h2>
-      <P class="text-background"> 10-12 Villa Thoreton, 75015 Paris</P>
-      <a href="https://www.google.fr/maps/place/10+Vla+Thoreton,+75015+Paris/@48.8382977,2.2811425,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700cdeaf43e1:0xcd55b79d0fd8cdba!8m2!3d48.8382942!4d2.2837228!16s%2Fg%2F11c5kqj2f7?entry=ttu&g_ep=EgoyMDI0MDkwOC4wIKXMDSoASAFQAw%3D%3D"
-         class="text-background font-bold" target="_blank" rel="noopener noreferrer">
-        <img src="/plan.png" alt="plan d'accès" class="w-32 mb-6 mt-2"/>
-      </a>
-    </div>
-  </div>
-  <div class=" w-full max-w-[1280px] mx-auto flex flex-col">
-    <hr class="bg-background w-3/5 h-px mx-auto my-4">
-    <p class="text-center text-background"><small>Copyright 2024 - Tous droits réservés</small></p>
-  </div>
+<footer class="w-full p-4 bg-primary-green text-background">
+	<!-- Wrapper centré et limité à 1280px -->
+	<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-8 md:gap-16 p-4 bg-primary-green">
 
+		<div class="flex-1">
+			<div class="inline-block">
+				<h2 class="text-lg leading-4 md:text-xl mb-4 text-background border-b border-solid border-white">
+					ME CONTACTER :
+				</h2>
+			</div>
 
+			<ul>
+				<li class="flex items-center gap-2 mb-2">
+					<i class="fa-duotone fa-solid fa-phone"></i>
+					<a href="tel:0665942420" class="text-background">06 65 94 24 20</a>
+				</li>
+				<li class="flex items-center gap-2 mb-2">
+					<i class="fa-solid fa-envelope"></i>
+					<a href="mailto:romcaretattoo@gmail.com" class="text-background">romcaretattoo&#64;gmail.com</a>
+				</li>
+				<li>
+					<a href="https://www.doctolib.fr/infirmier/paris/romain-keryhuel" class="font-bold"
+					   target="_blank" rel="noopener noreferrer">
+						<img src="/doctolib.webp" alt="plan d'accès" class="w-20 mb-6 mt-2"/>
+					</a>
+				</li>
+				<div class="inline-block">
+					<h2 class="text-lg leading-4 md:text-xl mb-4 text-background border-b border-solid border-white">
+						ME SUIVRE :
+					</h2>
+				</div>
+				<!-- Lien réseaux sociaux alignés à droite -->
+				<div class="flex gap-4">
+					<a href="https://www.instagram.com/romcare_tattoo/" class="text-background"
+					   target="_blank" rel="noopener noreferrer">
+						<i class="fa-brands fa-square-instagram text-2xl social-icons"></i>
+					</a>
+					<a href="https://www.facebook.com/RomCareTattoo" class="text-background"
+					   target="_blank" rel="noopener noreferrer">
+						<i class="fa-brands fa-square-facebook text-2xl social-icons"></i>
+					</a>
+				</div>
+
+			</ul>
+		</div>
+		<div class="flex-1">
+			<div class="inline-block">
+				<h2 class="text-lg leading-4 md:text-xl mb-4 text-background border-b border-solid border-white">
+					HORAIRES D'OUVERTURES :
+				</h2>
+			</div>
+			<ul>
+				<li>Lundi :</li>
+				<li>Mardi :</li>
+				<li>Mercredi :</li>
+				<li>Jeudi :</li>
+				<li>Vendredi :</li>
+				<li>Samedi :</li>
+				<li>Dimanche :</li>
+			</ul>
+		</div>
+		<div class="flex-1">
+			<div class="inline-block">
+				<h2 class="text-lg leading-4 md:text-xl mb-4 text-background border-b border-solid border-white">
+					M'Y RENDRE :
+				</h2>
+			</div>
+			<div class="flex items-center text-background gap-2 mb-3">
+				<i class="fa-solid fa-location-dot"></i>
+				<p class=" text-background">10-12 Villa Thoreton, 75015 Paris</p>
+			</div>
+			<div class="w-full h-35 rounded overflow-hidden shadow-lg mt-2">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999709681986!2d2.2837228!3d48.8382942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6700cdeaf43e1%3A0xcd55b79d0fd8cdba!2s10%20Vla%20Thoreton%2C%2075015%20Paris!5e0!3m2!1sfr!2sfr!4v1639064342280!5m2!1sfr!2sfr"
+					width="100%"
+					height="100%"
+					style="border:0;"
+					allowfullscreen=""
+					loading="lazy">
+				</iframe>
+			</div>
+		</div>
+	</div>
+	<div class="w-full mt-4 text-center">
+		<hr class="bg-background mb-4">
+		<p class="text-background "><small>Copyright 2024 - Tous droits réservés</small></p>
+	</div>
 </footer>
+
+
+

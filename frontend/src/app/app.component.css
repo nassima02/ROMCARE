@@ -26,16 +26,16 @@
   transform-origin: left;
 }
 
-/*style de footer*/
+/*style de footer: animation des liens vers les reseaux sociaux*/
 
-/* Appliquer une transition fluide */
+/* Application d'une transition fluide */
 .social-icons {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Lors du survol, augmenter légèrement la taille */
+/* Augmentation légère la taille  lors du survol*/
 .social-icons:hover {
-  transform: scale(1.2); /* Ajustez la valeur (1.2) selon vos besoins */
+  transform: scale(1.2);
 }
 
 

@@ -1,6 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Définition des variables CSS pour les couleurs */
+:root {
+  --primary-green: #496569;
+  --secondary-green: #6d99a2;
+  --background: #ece7e6;
+}
 
+/* Définition des polices */
+@font-face {
+  font-family: Brastag-regular;
+  src: url('/fonts/Brastag-Regular.otf');
+}
+
+@font-face {
+  font-family: Brastag-light;
+  src: url('/fonts/Brastag-Light.otf');
+}
+
+@font-face {
+  font-family: Brastag-bold;
+  src: url('/fonts/Brastag-Bold.otf');
+}
+
+@font-face {
+  font-family: Montserrat-regular;
+  src: url('/fonts/MONTSERRAT-REGULAR.TTF');
+}
+
+h1, h2, h3 {
+  font-family: Brastag-Bold;
+  letter-spacing: 0.07em;
+  color: var(--secondary-green);
+}
+
+p {
+  font-family: Montserrat-regular;
+  letter-spacing: 0.02em;
+  color: var(--primary-green);
+}
+
+ul, li, span, a {
+  font-family: Montserrat-regular;
+  letter-spacing: 0.02em;
+
+}

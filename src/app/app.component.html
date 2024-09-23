@@ -38,20 +38,24 @@
 
 			<!-- Menu Mobile (affiché/masqué en fonction de isMenuOpen) -->
 			<div [ngClass]="{'hidden': !isMenuOpen}" class="md:hidden w-full bg-background absolute top-full left-0 shadow-lg">
-				<div class="flex flex-col items-center space-y-2 py-4">
-					<a routerLink="/home" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
+				<div class="flex flex-col items-center space-y-6 py-4"> <!-- Ajustez ici l'espace vertical -->
+					<a routerLink="/home" (click)="toggleMenu()" class="text-md underline-animation"
 					   [ngClass]="{'active': isActive('/home')}">ACCUEIL</a>
 
 					<a routerLink="/la-dermopigmentation" (click)="toggleMenu()"
-					   class="text-md mx-4 my-2 underline-animation"
+					   class="text-md underline-animation"
 					   [ngClass]="{'active': isActive('/la-dermopigmentation')}">LA DERMOPIGMENTATION</a>
-					<a routerLink="/tarifs" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
+
+					<a routerLink="/tarifs" (click)="toggleMenu()" class="text-md underline-animation"
 					   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>
-					<a routerLink="/a-propos" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
+
+					<a routerLink="/a-propos" (click)="toggleMenu()" class="text-md underline-animation"
 					   [ngClass]="{'active': isActive('/a-propos')}">A PROPOS</a>
-					<a routerLink="/contact" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
+
+					<a routerLink="/contact" (click)="toggleMenu()" class="text-md underline-animation"
 					   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>
-					<a routerLink="/faq" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
+
+					<a routerLink="/faq" (click)="toggleMenu()" class="text-md underline-animation"
 					   [ngClass]="{'active': isActive('/faq')}">FAQ</a>
 				</div>
 			</div>

@@ -1,0 +1,6 @@
+/*Ajout des pointillés entre les titres et tarifs*/
+.dot-leader {
+	flex-grow: 1;
+	border-bottom: 1px dotted #000; /* couleur et style des points */
+	margin: 0 10px; /* espacement entre le texte et les points */
+}

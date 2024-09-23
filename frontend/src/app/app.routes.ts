@@ -11,9 +11,9 @@ import {AProposComponent} from "./screens/a-propos/a-propos.component";
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Optionnel, redirige vers la page d'accueil par défaut
   { path: 'home', component: HomeComponent, title: 'Accueil' },
-  { path: 'contact', component: ContactComponent, title: 'Contact' },
-  { path: 'a-propos', component: AProposComponent, title: 'A propos' },
+  { path: 'la-dermopigmentation', component: DermopigmentationComponent, title: 'La-dermopigmentation' },
   { path: 'tarifs', component:TarifsComponent, title: 'Tarifs' },
-  { path: 'la-dermopigmentation-réparatrice', component: DermopigmentationComponent, title: 'La-dermopigmentation-réparatrice' },
+  { path: 'a-propos', component: AProposComponent, title: 'A propos' },
+  { path: 'contact', component: ContactComponent, title: 'Contact' },
   { path: 'faq', component: FaqComponent, title: 'Faq' },
 ];

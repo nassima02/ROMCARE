@@ -1,0 +1,444 @@
+<div class="flex flex-col w-full mx-auto items-center pb-10 sm:pb-16 md:pb-20">
+	<div class="relative w-full h-[10rem] md:h-[15rem] bg-cover bg-center"
+		 style="background-image: url('/banner-pages.png')">
+		<app-banner [title]="'Foire aux questions'"></app-banner>
+	</div>
+	<p class="py-10 sm:py-12 md:py-16 lg:py-20 text-center max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%]">
+		Vous trouverez dans cette foire à questions l'ensemble des informations sur la dermopigmentation médicale
+	</p>
+	<!-- FAQ item -->
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p>La dermopigmentation médicale peut avoir plusieurs appellations :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Tatouage médical</li>
+				<li>Dermopigmentation réparatrice</li>
+			</ul><br>
+			<p>Après ablation d’un sein (mammectomie) pour le traitement d’un cancer du sein, une reconstruction
+				mammaire est possible et elle peut inclure une reconstruction du mamelon et de l’aréole (le cercle de
+				couleur qui entoure le mamelon)
+			</p><br>
+			<p>La reconstruction aérolo-mamelonnaire peut être chirurgicale. Si la patiente ne souhaite pas une
+				chirurgie, elle peut bénéficier d’un tatouage médical de l'aréole ou dermopigmentation.
+			</p><br>
+			<p>
+				La dermopigmentation réparatrice, ou tatouage médical, consiste en l’insertion dans le derme d’un
+				pigment au moyen d’aiguilles à usage unique. Ce tatouage permet de pigmenter la peau ou de
+				corriger un défaut de coloration de celle-ci. Le mamelon est dessiné en trompe-l’œil.
+			</p><br>
+			<p>
+				La dermopigmentation médicale ou réparatrice doit être exercée par un professionnel de santé formé
+				à la technique. Elle peut être réalisée :
+			</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Au bloc opératoire par le chirurgien ou une infirmière, au moment de la reconstruction du
+					volume du sein, sous anesthésie générale ;</li>
+				<li>Ou plus tard, en ambulatoire, par une infirmière ou un dermatologue, avec ou sans
+					anesthésie locale topique (patch ou crème anesthésiante).
+				</li>
+			</ul><br>
+			<p>
+				Il est à noter que des tatoueurs professionnels ont développé le tatouage artistique (non médical) dit
+				en 3D avec de l’encre de tatouage pour reconstituer le mamelon.
+			</p><br>
+			<p>
+				Seul le tatouage médical est pris en charge par l'Assurance Maladie.
+			</p>
+		</div>
+
+	</div>
+
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p>Le plus souvent, le tatouage se passe bien. Le respect des règles de réalisation et des soins apportés
+				après le tatouage garantissent un déroulement sans problème.
+			</p><br>
+			<p>
+				Cependant, des complications peuvent être observées, soit très vite après le tatouage, soit plus tard
+				au fil du temps.
+			</p>
+		</div>
+	</div>
+
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p class="pl-8">
+				1. Les complications aiguës du tatouage
+			</p><br>
+			<p>Douleurs au niveau de la peau tatouée et malaise</p><br>
+			<p>
+				Comme il est réalisé sans anesthésie, il provoque une douleur qui peut ressembler à une perte de
+				connaissance (syncope).
+			</p><br>
+			<p>
+				L'allergies aux encres de tatouage est la complication la plus fréquente après un tatouage. Le plus
+				souvent une seule couleur est en cause dans ce phénomène allergique (habituellement le rouge, mais
+				cela est possible pour toutes les autres couleurs).
+			</p><br>
+			<p>
+				Les signes de complications aigües :
+			</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Un tatouage qui démange et/ou qui gonfle;</li>
+				<li>Des lésions plus ou moins importantes essentiellement sur le tatouage ;</li>
+				<li>Une réaction urticarienne, éruption rouge (érythémateuse)...</li>
+			</ul><br>
+			<p class="pl-8">
+				2. Les complications aiguës infectieuses après tatouage
+			</p><br>
+			<p>Il peut s’agir :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>D’une infection par inoculation d’un germe lors du geste de tatouage (matériel ou encre de
+					tatouage contaminés ou désinfectant contaminé), survenant si les règles de réalisation du
+					tatouage ne sont pas respectées ;</li>
+				<li>Ou d’une contamination secondaire par erreur lors des soins locaux lors de la phase de
+					cicatrisation.</li>
+			</ul><br>
+			<p>L’infection est généralement due à une bactérie. Le plus souvent, la bactérie en cause est un
+				staphylocoque doré ou un streptocoque.</p><br>
+			<p>L’infection est le plus souvent locale : abcès, pustule, cellulite ou érysipèle.</p><br>
+			<p>La gravité de ces infections dépend de la dissémination éventuelle mais rare du germe dans le sang et
+				les tissus avoisinants. Cette infection peut entraîner des risques d’endocardite (atteinte de la paroi
+				interne du cœur) par exemple.</p><br>
+			<p>Les infections virales sont plus rares. Le tatouage s'accompagnant d’un saignement durant la séance,
+				il y a un risque potentiel de contamination par les virus transmissibles par le sang comme l’hépatite B,
+				le virus de l’immunodéficience humaine (VIH) et surtout l’hépatite C. La transmission survient lors du
+				geste si le matériel utilisé est contaminé, mal nettoyé et/ou mal stérilisé.</p><br>
+			<p>La vaccination contre l’hépatite B de la personne souhaitant un tatouage ainsi que pour le tatoueur
+				est recommandée avant sa réalisation.</p><br>
+			<p class="pl-8">
+				3. Les complications chroniques du tatouage
+			</p><br>
+			<p>Ces complications surviennent longtemps après l’acte de tatouage, et peuvent se révéler parfois
+				plusieurs années plus tard.</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Tatouage ne donnant pas satisfaction</li>
+				<li>L'insatisfaction peut être due à des désagréments esthétiques : une hyperpigmentation de la
+					peau ;</li>
+				<li>Un œdème chronique de la zone tatouée ; une sensation douloureuse persistante ;</li>
+				<li>Des cicatrices ponctuées de l'aiguille (particulièrement visible après détatouage)</li>
+				<li>Un tatouage mal réalisé ou « bavant ».</li>
+				<li>Cette insatisfaction peut également être en lien avec une gêne psychosociale</li>
+				<li>Ou le regret d’avoir été tatoué.</li>
+			</ul><br>
+			<p class="pl-8">
+				4. Les réactions inflammatoires de la peau après tatouage
+			</p><br>
+			<p>Les réactions inflammatoires de la peau sont les complications chroniques les plus fréquentes. Ces
+				réactions sont imprévisibles et surviennent dans des délais allant de quelques semaines (parfois dès
+				la fin du tatouage) à plus de 40 ans après le tatouage.</p><br>
+			<p>Des réactions de nature allergique surviennent plus fréquemment avec des tatouages de couleur
+				(surtout rouge). Il s’agit de démangeaisons au niveau des tatouages ou de gonflement des tatouages -
+				parfois après exposition au soleil. Des réactions urticariennes chroniques sont possibles.</p><br>
+			<p>Certaines maladies dermatologiques chroniques semblent être favorisées par les tatouages et
+				peuvent se localiser préférentiellement sur des zones de tatouage (qui sont des zones ayant subi un
+				traumatisme). Il s'agit par exemple :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Du psoriasis ;</li>
+				<li>Du lichen plan (maladie inflammatoire de la peau se traduisant par des papules de la peau
+					qui démangent et des squames de peau morte) ;</li>
+				<li>De la kératose séborrhéique (présence de verrues séborrhéiques) ; du lupus cutané. Le lupus
+					cutané isolé touche uniquement la peau, notamment au niveau du visage ;</li>
+				<li>Du vitiligo (maladie de l'épiderme qui se caractérise par des taches blanches dépigmentées
+					sur la peau).</li>
+			</ul><br>
+			<p>De nombreuses tuméfactions bénignes semblent être favorisées par les tatouages :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Granulomes inflammatoires non allergiques se révélant au contact d’une surcharge
+					pigmentaire (pigment noir) ;</li>
+				<li>Kystes (tuméfaction rempli de liquide) ; fibromes (tumeur bénigne fibreuse) ; lipomes
+					(tumeur bénigne de graisse)…</li>
+			</ul><br>
+			<p>La réactivation d'une sarcoïdose ancienne (maladie systémique définie par sa lésion histologique : un
+				granulome inflammatoire sans nécrose caséeuse), ou l'apparition d'une sarcoïdose induite après
+				tatouage est possible, particulièrement avec les encres noires</p><br>
+			<p>La survenue de tumeurs cancéreuses de la peau (mélanomes, carcinomes…), en raison de la présence
+				de produits potentiellement cancérigènes dans les encres de tatouage, est à l’étude. Il n’existe pas à
+				ce jour de lien de causalité démontré.</p><br>
+			<p class="pl-8">
+				5. Tatouage et gêne à la réalisation de certains soins et examens
+			</p><br>
+			<p>Les tatouages peuvent gêner les soins et entraîner certains risques :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Difficulté à repérer les lésions de la peau cachées par le tatouage ; risque supplémentaire lors
+					de la réalisation de certains actes : injection péridurale, ponction lombaire ;</li>
+				<li>Risque de migration de particules d’encres de tatouage à l’origine d’artéfacts en radiologie.</li>
+			</ul><br>
+		</div>
+	</div>
+
+
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p>Certaines personnes sont plus exposées aux complications. Parler à son médecin traitant avant de se
+				faire tatouer est utile. Il peut conseiller, et alerter les personnes les plus exposées aux complications.
+				C’est le cas des personnes qui présentent :
+			</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Un diabète ;</li>
+				<li>Une insuffisance rénale ;</li>
+				<li>Une maladie des valves cardiaques ;</li>
+				<li>Une immunodépression (suite à une maladie ou un traitement) ; des troubles de coagulation
+					du sang ;</li>
+				<li>Une allergie en particulier à l’une des substances utilisées lors du tatouage (encres, pigments,
+					métaux, latex) ;</li>
+				<li>Une maladie de la peau : dermatite atopique, psoriasis, lichen plan, lupus cutané, sarcoïdose
+					ou vitiligo. En cas d'acné, notamment du dos, il est recommandé d’attendre que le traitement
+					de l’acné soit terminé avant de faire un tatouage, car les lésions d'acné sont inflammatoires
+					et contiennent des germes.</li>
+			</ul><br>
+			<p>
+				Par ailleurs, le tatouage est déconseillé :
+			</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Chez les femmes enceintes ou allaitant ;</li>
+				<li>Les personnes porteuses du virus de l’hépatite B ou C (la vaccination contre l’hépatite B est
+					recommandée avant le tatouage) ou du VIH ;</li>
+				<li>Les personnes souffrant du syndrome des nævus atypiques (un très grand nombre de nævus
+					tous différents les uns des autres) car la surveillance des grains de beauté cachés sous un
+					tatouage peut devenir difficile.</li>
+			</ul><br>
+			<p>
+				Par ailleurs, en cas de multiples taches de rousseur, un avis médical est nécessaire.
+			</p>
+		</div>
+	</div>
+
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p>Le tatouage est un acte qui doit être réalisé par un professionnel. La fonction du tatoueur est
+				encadrée par l’agence régionale de santé (ARS) et ses manières d’exercer doivent respecter un certain
+				nombre de critères d’hygiène pour assurer la sécurité de ses actes.
+			</p><br>
+
+		</div>
+	</div>
+
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p>Les professionnels du tatouage et du maquillage permanent ont l'obligation de déclarer la création, la
+				cessation et le transfert de leur activité auprès de l'Agence régionale de la santé (ARS) de leur région.
+			</p><br>
+			<p>Le professionnel doit déclarer auprès de l’ARS où il exerce son activité principale :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Son activité qu'elle soit permanente ou provisoire (moins de 3 jours) ;</li>
+				<li>La cessation ou le transfert d’activité ;</li>
+				<li>Tout rassemblement (salons, manifestations, etc.).</li>
+			</ul><br>
+			<p>Le professionnel doit également transmettre une attestation de formation aux conditions d’hygiène
+				et de salubrité à l'ARS. D'une durée minimale de 21 heures réparties sur 3 jours consécutifs, cette
+				formation ne peut être dispensée que par les organismes habilités par le directeur de l’ARS de la
+				région où elle a lieu.</p><br>
+			<p>Le professionnel qui réalise le tatouage doit afficher cette attestation de formation dans le lieu de
+				réception de la clientèle.</p><br>
+		</div>
+	</div>
+
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p>Avant de se faire faire un tatouage, prenez le temps de réfléchir à votre projet de tatouage : l’encre
+				est indélébile et le détatouage difficile et onéreux.
+			</p><br>
+			<p>Comment se déroule une séance de dermopigmentation des aréoles mammaires ?
+				Avant de se faire faire un tatouage, prenez le temps de réfléchir à votre projet de tatouage : l’encre
+				est indélébile et le détatouage difficile et onéreux.
+				Assurez-vous auprès de votre médecin de l’absence de contre-indications. Il est également conseillé
+				de montrer la zone que vous souhaitez faire tatouer à un dermatologue, afin de dépister, si besoin,
+				toute maladie susceptible de constituer une contre-indication.</p><br>
+			<p>Vérifiez que vos vaccins sont à jour. Une vaccination contre l’hépatite B est recommandée.</p><br>
+			<p>La veille du tatouage, évitez l’alcool et les médicaments contenant de l’aspirine.</p><br>
+			<p>Demandez au tatoueur s’il est nécessaire de raser ou épiler la zone. Le laisser faire s’il le conseille.</p><br>
+			<p>Le professionnel du tatouage doit respecter une procédure bien définie.</p><br>
+			<p class="pl-8">
+				1. Le recueil de votre consentement
+			</p><br>
+			<p>Ce recueil de votre consentement est écrit si le tatouage concerne votre enfant de moins de 18 ans.
+				Le tatouage est déconseillé tant que la croissance n’est pas achevée.</p><br>
+
+			<p class="pl-8">
+				2. Votre information
+			</p><br>
+			<p>Le tatoueur vous informe des risques et précautions à respecter après la réalisation des techniques
+				de tatouage par effraction cutanée et de maquillage permanent.</p><br>
+			<p>Cette information est délivrée oralement et affichée de manière visible dans le local où la technique
+				est mise en œuvre. Elle vous est également remise par écrit.</p><br>
+			<p class="pl-8">
+				3. Votre déclaration sur l'honneur
+			</p><br>
+			<p>Le tatoueur vous demande de signer une déclaration attestant que vous :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>n’avez pas d’allergies ;</li>
+				<li>n’êtes pas sous l’emprise de drogues ou d’alcool ;</li>
+				<li>avez bien mangé dans les 24 heures précédant le tatouage ; l’autorisez à tatouer.</li>
+			</ul><br>
+			<p class="pl-8">
+				4. Les règles d’hygiène et de salubrité
+			</p><br>
+			<p>Le tatoueur s'engage à respecter les bonnes pratiques d’hygiène et de salubrité applicables à son
+				activité. En effet, les risques infectieux liés aux pratiques du tatouage peuvent être maîtrisés par le
+				respect des bonnes pratiques d’hygiène.</p><br>
+			<p>Le professionnel doit réaliser le tatouage dans une pièce dédiée à cette opération ;</p><br>
+			<p>Elle ne peut pas servir à une autre activité (espace de vente, par exemple) ; Cette pièce doit être
+				nettoyée tous les jours ;</p><br>
+			<p>Les surfaces et matériels utilisés doivent être désinfectées entre chaque client ; Le professionnel doit
+				retirer ses bijoux et porter des gants. Les gants sont changés entre 2 clients. Ils sont également
+				changés, pour un même client, chaque fois que le professionnel est amené à toucher tout objet
+				étranger à la réalisation du tatouage ;</p><br>
+			<p>L’utilisation systématique de matériel à usage unique ;</p><br>
+			<p>Le tatoueur doit utiliser des aiguilles, cartouches d’encre, des éponges et serviettes à usage unique et
+				utiliser une buse, un manchon, et une tige porte-aiguille stérilisés ;</p><br>
+			<p>Le respect des règles concernant l’hygiène des mains par lavage ou friction hydro-alcoolique ;</p><br>
+			<p>La désinfection de la peau ou de la muqueuse avant le tatouage en utilisant un antiseptique ;</p><br>
+			<p class="pl-8">
+				5. Les produits de tatouage utilisés
+			</p><br>
+			<p>Un produit de tatouage est défini comme « toute substance ou préparation colorante destinée, par
+				effraction cutanée, à créer une marque sur les parties superficielles du corps humain à l’exception des
+				produits qui sont des dispositifs médicaux ».</p><br>
+			<p>Les tatouages ne peuvent être effectués qu’avec des produits conformes à la réglementation en
+				vigueur.</p><br>
+			<p>La mise sur le marché d’un produit de tatouage est conditionnée au respect de plusieurs exigences
+				visant à s’assurer que le produit respecte les règles de composition et ne nuit pas à la santé humaine
+				dans les conditions normales ou raisonnablement prévisibles d’utilisation (Code de la santé publique :
+				Chapitre X : Produits de tatouage (Articles L513-10-1 à L513-10-10))</p><br>
+			<p class="pl-8">
+				6. La réalisation du tatouage
+			</p><br>
+			<p>Prenez le temps de discuter avec le professionnel du tatouage que vous souhaitez, de son motif et
+				emplacement.</p><br>
+			<p>Lors d’un autre rendez-vous, le tatoueur vous présente le dessin du motif à tatouer ou directement
+				sur la peau.</p><br>
+			<p>Le tatouage est réalisé grâce à un dermographe composé d'un groupe de petites aiguilles qui
+				pénètrent dans la peau et ressortent très rapidement en y déposant un peu d'encre à chaque piqûre.
+				La machine laisse donc un grand nombre de coupures minuscules dans la peau tatouée, qui saignent
+				légèrement.</p><br>
+			<p>Le tatouage est généralement considéré comme douloureux : les récepteurs de la douleur sont
+				particulièrement abondants dans la couche inférieure de l'épiderme. Une douleur vive est ressentie
+				aux premiers coups d’aiguilles. Elle s’atténue après quelques minutes.</p><br>
+			<p>L’intensité de la douleur varie selon la zone du corps choisie : le bas du dos et les chevilles font parties
+				des zones les plus douloureuses alors que l'avant-bras, les cuisses, les bras, les mollets ou la poitrine
+				sont des zones moins sensibles. Pour les seins ayant subit une opération, la sensibilité peu diminuer.</p><br>
+		</div>
+	</div>
+
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p>Après la réalisation d’un tatouage, la zone est rouge, enflée et douloureuse durant quelques heures.
+				Au bout de quelques jours, une fine desquamation (des pellicules de peau qui apparaissent) est
+				possible. La cicatrisation du tatouage prend 3 à 4 semaines. Pendant cette période, vous devrez le
+				surveiller attentivement.
+			</p><br>
+			<p class="pl-8">
+				1. Précautions standards
+			</p><br>
+			<p>Pour faciliter la cicatrisation sans complication, il est important de :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Se laver les mains avec du savon avant chaque soin d’éviter l’exposition au soleil</li>
+				<li>D’éviter la transpiration (sauna, hammam, sport) d’éviter le contact avec l’eau les premières
+					48h pas de bain jusqu’à 2 mois post-tatouage</li>
+				<li>Porter des vêtements propres et amples(éviter soutien-gorge, pas de laine)</li>
+				<li>Ne pas arracher les croûtes</li>
+				<li>D’éviter l’alcool et les drogues</li>
+			</ul><br>
+			<p class="pl-8">
+				2. Recommandations de soins
+			</p><br>
+			<p>Le lendemain matin, retirez le pansement délicatement à l’aide d’une compresse stérile NON TISSEE :</p><br>
+			<ul class="list-disc ml-6 sm:ml-8">
+				<li>Lavez à l’eau et au savon pH neutre (sans frotter, du centre vers l’extérieur)</li>
+				<li>Rincez à l’eau (sans fotter, du centre vers l’extérieur)</li>
+				<li>Séchez en tamponnant délicatement</li>
+				<li>Appliquez une crème cicatrisante SANS ZINC, en petite quantité, sans recouvrir la plaie</li>
+				<li>Laisser à l’air libre (si soutien-gorge, utilisez des compresses stériles non tissées pour couvrir
+					le tatouage)</li>
+			</ul><br>
+			<p class="pl-8">
+				3. Avis médical
+			</p><br>
+			<p>Au moindre signe de complication, douleur, sensation de chaleur, rougeur, gonflement, n’hésitez pas
+				à consulter votre médecin traitant.</p><br>
+		</div>
+	</div>
+	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+			<p>En cas d’allergie : certains types de peau sont allergiques aux produits de tatouage. Cette allergie
+				n’apparaît pas toujours précocement. Elle se traduit par des dermatites qui, lorsqu’elles ne sont pas
+				vite traitées, peuvent causer une surinfection bactérienne.
+			</p><br>
+			<p>Consultez un dermatologue si vous constatez ces complications. Le traitement de ces allergies par
+				l'application de corticoïdes locaux est souvent peu efficace car l'encre est toujours présente dans la
+				peau. Le retrait du tatouage par laser ou chirurgie est parfois nécessaire.</p><br>
+
+			<p>Certaines maladies de peau (psoriasis, vitiligo, lichen plan, sarcoïdose…) peuvent se réactiver sur un
+				tatouage. Si c’est le cas, consultez votre médecin.</p><br>
+			<p>Si vous regrettez d’avoir été tatoué, parlez-en à un dermatologue. Le détatouage est envisageable.</p><br>
+		</div>
+	</div>
+</div>
+
+
+
+

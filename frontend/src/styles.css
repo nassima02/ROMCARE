@@ -31,10 +31,10 @@
   src: url('/fonts/MONTSERRAT-REGULAR.TTF');
 }
 
-h1, h2, h3, span {
+h1, h2, h3, span,a {
   font-family: Brastag-Bold;
   letter-spacing: 0.07em;
-  color: var(--secondary-green);
+  color: var(--primary-green);
 }
 
 p {
@@ -43,7 +43,11 @@ p {
   color: var(--primary-green);
 }
 
-ul, li,a {
+ul, li {
   font-family: Montserrat-regular;
   letter-spacing: 0.02em;
+}
+.email-style {
+	font-family: Montserrat-regular;
+	src: url('/fonts/MONTSERRAT-REGULAR.TTF');
 }

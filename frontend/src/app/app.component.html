@@ -1,124 +1,61 @@
-<header class="sticky top-0 left-0 w-full bg-white shadow-sm shadow-primary-green p-6 z-30">
+<header class="sticky top-0 left-0 w-full bg-background shadow-sm shadow-primary-green p-6 z-30 ">
 
-	<div class="flex justify-between md:grid md:grid-cols-[1fr_128px_1fr] items-center gap-8">
+	<div class="flex justify-between md:grid md:grid-cols-[1fr_128px_1fr] items-center gap-10">
 		<!-- Liens de navigation à gauche du logo -->
-		<div class="hidden md:flex flex-grow justify-start md:justify-end gap-2 text-secondary-green">
-			<a routerLink="/home" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"
+		<div class="hidden md:flex flex-grow justify-start md:justify-end gap-2 ">
+			<a routerLink="/home" class="text-sm md:text-lg  mx-4 my-2 whitespace-nowrap underline-animation"
 			   [ngClass]="{'active': isActive('/home')}">
 				ACCUEIL
 			</a>
-			<a routerLink="/la-dermopigmentation-réparatrice"
-			   class="text-sm px-4 py-2 whitespace-nowrap underline-animation"
-			   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">
-				LA DERMOPIGMENTATION REPARATRICE
+			<a routerLink="/la-dermopigmentation"
+			   class="text-sm md:text-lg mx-4 my-2 whitespace-nowrap underline-animation"
+			   [ngClass]="{'active': isActive('/la-dermopigmentation')}">
+				LA DERMOPIGMENTATION
 			</a>
 		</div>
-		<div><img src="/logo-romacair.png" alt="logo romacair" class="w-20 md:w-32"/></div>
+		<div><img src="/logo-romacair2.png" alt="logo romacair" class="w-20 md:w-32"/></div>
 		<div class="flexjustify-end">
 			<!-- Liens de navigation à droite du logo -->
-			<div class="hidden md:flex flex-grow justify-end md:justify-start gap-2 text-secondary-green">
-				<a routerLink="/tarifs" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"
+			<div class="hidden md:flex flex-grow justify-end md:justify-start gap-2">
+				<a routerLink="/tarifs" class="text-sm md:text-lg mx-4 my-2 whitespace-nowrap underline-animation"
 				   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>
-				<a [routerLink]="['/a-propos']" fragment="partenaires"
-				   class="text-sm px-4 py-2 whitespace-nowrap underline-animation">A PROPOS</a>
-				<a routerLink="/contact" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"
+
+				<a routerLink="/a-propos"  class="text-sm md:text-lg mx-4 my-2 whitespace-nowrap underline-animation"
+				   [ngClass]="{'active': isActive('/a-propos')}">A PROPOS</a>
+
+				<a routerLink="/contact" class="text-sm md:text-lg mx-4 my-2 whitespace-nowrap underline-animation"
 				   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>
-				<a routerLink="/faq" class="text-sm px-4 py-2 whitespace-nowrap underline-animation">FAQ</a>
+
+				<a routerLink="/faq" class="text-sm md:text-lg mx-4 my-2 whitespace-nowrap underline-animation"
+				   [ngClass]="{'active': isActive('/faq')}">FAQ</a>
 			</div>
 
-			<div class="md:hidden">
-				<button (click)="toggleMenu()" class="text-secondary-green">
-					<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-						 xmlns="http://www.w3.org/2000/svg">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							  d="M4 6h16M4 12h16M4 18h16"></path>
-					</svg>
-				</button>
+			<!-- Icône Menu Mobile -->
+			<div (click)="toggleMenu()" class="md:hidden p-4">
+				<!-- Icone burger de FontAwesome avec la couleur primaire green -->
+				<i class="fas fa-bars text-primary-green text-4xl"></i>
 			</div>
 
 			<!-- Menu Mobile (affiché/masqué en fonction de isMenuOpen) -->
-			<div [ngClass]="{'hidden': !isMenuOpen}" class="md:hidden w-full bg-white absolute top-full left-0 shadow-lg">
+			<div [ngClass]="{'hidden': !isMenuOpen}" class="md:hidden w-full bg-background absolute top-full left-0 shadow-lg">
 				<div class="flex flex-col items-center space-y-2 py-4">
-					<a routerLink="/home" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					<a routerLink="/home" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
 					   [ngClass]="{'active': isActive('/home')}">ACCUEIL</a>
 					<a routerLink="/la-dermopigmentation-réparatrice" (click)="toggleMenu()"
-					   class="text-xs px-4 py-2 underline-animation"
-					   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">LA DERMOPIGMENTATION
-						REPARATRICE</a>
-					<a routerLink="/tarifs" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					   class="text-md mx-4 my-2 underline-animation"
+					   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">LA DERMOPIGMENTATION</a>
+					<a routerLink="/tarifs" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
 					   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>
-					<a routerLink="/a-propos" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					<a routerLink="/a-propos" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
 					   [ngClass]="{'active': isActive('/a-propos')}">A PROPOS</a>
-					<a routerLink="/contact" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					<a routerLink="/contact" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
 					   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>
-					<a routerLink="/faq" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"
+					<a routerLink="/faq" (click)="toggleMenu()" class="text-md mx-4 my-2 underline-animation"
 					   [ngClass]="{'active': isActive('/faq')}">FAQ</a>
 				</div>
 			</div>
+
 		</div>
-	</div>
-
-	<div class="flex items-center justify-between mx-auto max-w-screen-xl ">
-
-		<!-- Liens de navigation à gauche du logo -->
-<!--		<div class="hidden md:flex flex-grow justify-start md:justify-end gap-2 text-secondary-green">-->
-<!--			<a routerLink="/home" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"-->
-<!--			   [ngClass]="{'active': isActive('/home')}">-->
-<!--				ACCUEIL-->
-<!--			</a>-->
-<!--			<a routerLink="/la-dermopigmentation-réparatrice"-->
-<!--			   class="text-sm px-4 py-2 whitespace-nowrap underline-animation"-->
-<!--			   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">-->
-<!--				LA DERMOPIGMENTATION REPARATRICE-->
-<!--			</a>-->
-<!--		</div>-->
-
-		<!-- Logo centré -->
-<!--		<div class="flex items-center justify-center px-2 md:px-8 ">-->
-<!--			<img src="/logo-romacair.png" alt="logo romacair" class="w-20 md:w-32"/>-->
-<!--		</div>-->
-
-		<!-- Liens de navigation à droite du logo -->
-<!--		<div class="hidden md:flex flex-grow justify-end md:justify-start gap-2 text-secondary-green">-->
-<!--			<a routerLink="/tarifs" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"-->
-<!--			   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>-->
-<!--			<a [routerLink]="['/a-propos']" fragment="partenaires"-->
-<!--			   class="text-sm px-4 py-2 whitespace-nowrap underline-animation">A PROPOS</a>-->
-<!--			<a routerLink="/contact" class="text-sm px-4 py-2 whitespace-nowrap underline-animation"-->
-<!--			   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>-->
-<!--			<a routerLink="/faq" class="text-sm px-4 py-2 whitespace-nowrap underline-animation">FAQ</a>-->
-<!--		</div>-->
-
-		<!-- Bouton Menu Hamburger pour Mobile -->
-<!--		<div class="md:hidden">-->
-<!--			<button (click)="toggleMenu()" class="text-secondary-green">-->
-<!--				<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"-->
-<!--					 xmlns="http://www.w3.org/2000/svg">-->
-<!--					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
-<!--						  d="M4 6h16M4 12h16M4 18h16"></path>-->
-<!--				</svg>-->
-<!--			</button>-->
-<!--		</div>-->
-
-<!--		&lt;!&ndash; Menu Mobile (affiché/masqué en fonction de isMenuOpen) &ndash;&gt;-->
-<!--		<div [ngClass]="{'hidden': !isMenuOpen}" class="md:hidden w-full bg-white absolute top-full left-0 shadow-lg">-->
-<!--			<div class="flex flex-col items-center space-y-2 py-4">-->
-<!--				<a routerLink="/home" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
-<!--				   [ngClass]="{'active': isActive('/home')}">ACCUEIL</a>-->
-<!--				<a routerLink="/la-dermopigmentation-réparatrice" (click)="toggleMenu()"-->
-<!--				   class="text-xs px-4 py-2 underline-animation"-->
-<!--				   [ngClass]="{'active': isActive('/la-dermopigmentation-réparatrice')}">LA DERMOPIGMENTATION-->
-<!--					REPARATRICE</a>-->
-<!--				<a routerLink="/tarifs" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
-<!--				   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>-->
-<!--				<a routerLink="/a-propos" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
-<!--				   [ngClass]="{'active': isActive('/a-propos')}">A PROPOS</a>-->
-<!--				<a routerLink="/contact" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
-<!--				   [ngClass]="{'active': isActive('/contact')}">CONTACT</a>-->
-<!--				<a routerLink="/faq" (click)="toggleMenu()" class="text-xs px-4 py-2 underline-animation"-->
-<!--				   [ngClass]="{'active': isActive('/faq')}">FAQ</a>-->
-<!--			</div>-->
-<!--		</div>-->
 	</div>
 </header>
 
@@ -128,13 +65,13 @@
 </main>
 
 
-<footer class="w-full p-4 bg-primary-green text-background">
+<footer class="w-full p-4 bg-background text-primary-green">
 	<!-- Wrapper centré et limité à 1280px -->
-	<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-8 md:gap-16 p-4 bg-primary-green">
+	<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-8 md:gap-16 p-4 bg-background">
 
 		<div class="flex-1">
 			<div class="inline-block">
-				<h2 class="text-lg leading-4 md:text-xl mb-4 text-background border-b border-solid border-white">
+				<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green font-bold border-b border-solid border-primary-green">
 					ME CONTACTER :
 				</h2>
 			</div>
@@ -142,30 +79,30 @@
 			<ul>
 				<li class="flex items-center gap-2 mb-2">
 					<i class="fa-duotone fa-solid fa-phone"></i>
-					<a href="tel:0665942420" class="text-background">06 65 94 24 20</a>
+					<a href="tel:0665942420" class="text-primary-green email-style">06 65 94 24 20</a>
 				</li>
-				<li class="flex items-center gap-2 mb-2">
+				<li class="flex items-center gap-2  mb-2">
 					<i class="fa-solid fa-envelope"></i>
-					<a href="mailto:romcaretattoo@gmail.com" class="text-background">romcaretattoo&#64;gmail.com</a>
+					<a href="mailto:romcaretattoo@gmail.com" class="text-primary-green email-style">romcaretattoo&#64;gmail.com</a>
 				</li>
 				<li>
 					<a href="https://www.doctolib.fr/infirmier/paris/romain-keryhuel" class="font-bold"
 					   target="_blank" rel="noopener noreferrer">
-						<img src="/doctolib.webp" alt="plan d'accès" class="w-20 mb-6 mt-2"/>
+						<img src="/logo-doctolib.png" alt="plan d'accès" class="w-24 mb-6 mt-4"/>
 					</a>
 				</li>
 				<div class="inline-block">
-					<h2 class="text-lg leading-4 md:text-xl mb-4 text-background border-b border-solid border-white">
+					<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green border-b border-solid border-primary-green">
 						ME SUIVRE :
 					</h2>
 				</div>
 				<!-- Lien réseaux sociaux alignés à droite -->
 				<div class="flex gap-4">
-					<a href="https://www.instagram.com/romcare_tattoo/" class="text-background"
+					<a href="https://www.instagram.com/romcare_tattoo/" class="text-primary-green"
 					   target="_blank" rel="noopener noreferrer">
 						<i class="fa-brands fa-square-instagram text-2xl social-icons"></i>
 					</a>
-					<a href="https://www.facebook.com/RomCareTattoo" class="text-background"
+					<a href="https://www.facebook.com/RomCareTattoo" class="text-primary-green"
 					   target="_blank" rel="noopener noreferrer">
 						<i class="fa-brands fa-square-facebook text-2xl social-icons"></i>
 					</a>
@@ -175,29 +112,30 @@
 		</div>
 		<div class="flex-1">
 			<div class="inline-block">
-				<h2 class="text-lg leading-4 md:text-xl mb-4 text-background border-b border-solid border-white">
-					HORAIRES D'OUVERTURES :
+				<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green border-b border-solid border-primary-green">
+					HORAIRES :
 				</h2>
 			</div>
-			<ul>
-				<li>Lundi :</li>
-				<li>Mardi :</li>
-				<li>Mercredi :</li>
-				<li>Jeudi :</li>
-				<li>Vendredi :</li>
-				<li>Samedi :</li>
-				<li>Dimanche :</li>
+			<ul class="leading-relaxed"> <!-- Ajout de la classe leading-relaxed -->
+				<li>Lundi : 10h-17h</li>
+				<li>Mardi : 10h-17h</li>
+				<li>Mercredi : 10h-17h</li>
+				<li>Jeudi : 10h-17h</li>
+				<li>Vendredi : 10h-17h</li>
+				<li>Samedi : Fermé</li>
+				<li>Dimanche : Fermé</li>
 			</ul>
 		</div>
+
 		<div class="flex-1">
 			<div class="inline-block">
-				<h2 class="text-lg leading-4 md:text-xl mb-4 text-background border-b border-solid border-white">
+				<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green border-b border-solid border-primary-green">
 					M'Y RENDRE :
 				</h2>
 			</div>
-			<div class="flex items-center text-background gap-2 mb-3">
+			<div class="flex items-center text-primary-green gap-2 mb-3">
 				<i class="fa-solid fa-location-dot"></i>
-				<p class=" text-background">10-12 Villa Thoreton, 75015 Paris</p>
+				<p class=" text-primary-green">10-12 Villa Thoreton, 75015 Paris</p>
 			</div>
 			<div class="w-full h-35 rounded overflow-hidden shadow-lg mt-2">
 				<iframe
@@ -210,10 +148,22 @@
 				</iframe>
 			</div>
 		</div>
+		<div class="flex-1 flex-col ">
+			<div class="inline-block">
+				<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green border-b border-solid border-primary-green">
+					AFFILIATIONS :
+				</h2>
+			</div>
+			<div class="flex md:flex-col">
+				<img src="/logo-ordre-infirmier.png" alt="logo de l'order infirmier" class="w-20 md:w-24 "/>
+				<img src="/logo-cpam.svg" alt="logo de la sécurité sociale" class="w-20 md:w-24 ml-10"/>
+			</div>
+
+		</div>
 	</div>
 	<div class="w-full mt-4 text-center">
-		<hr class="bg-background mb-4">
-		<p class="text-background "><small>Copyright 2024 - Tous droits réservés</small></p>
+		<hr class="border-t border-solid border-primary-green mb-4">
+		<p class="text-primary-green font-bold "><small>Copyright 2024 - Tous droits réservés</small></p>
 	</div>
 </footer>
 

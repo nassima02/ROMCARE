@@ -1,22 +1,27 @@
-<header class="sticky top-0 left-0 w-full bg-background shadow-sm shadow-primary-green p-6 z-30 ">
+<header class="sticky top-0 left-0 w-full bg-background shadow-sm shadow-primary-green p-4 z-30 ">
 
-	<div class="flex justify-between md:grid md:grid-cols-[1fr_128px_1fr] items-center gap-10">
+	<div class="flex justify-between md:grid md:grid-cols-[1fr_128px_1fr] items-center gap-6 max-w-[1280px] mx-auto">
 		<!-- Liens de navigation à gauche du logo -->
-		<div class="hidden md:flex flex-grow justify-start md:justify-end gap-2 ">
-			<a routerLink="/home" class="text-sm md:text-lg  mx-4 my-2 whitespace-nowrap underline-animation"
+		<div class="hidden md:flex flex-grow justify-start md:justify-around ">
+			<a routerLink="/home" class="text-sm md:text-lg   my-2 whitespace-nowrap underline-animation"
 			   [ngClass]="{'active': isActive('/home')}">
 				ACCUEIL
 			</a>
 			<a routerLink="/la-dermopigmentation"
-			   class="text-sm md:text-lg mx-4 my-2 whitespace-nowrap underline-animation"
+			   class="text-sm md:text-lg mx-6 my-2 whitespace-nowrap underline-animation"
 			   [ngClass]="{'active': isActive('/la-dermopigmentation')}">
 				LA DERMOPIGMENTATION
 			</a>
 		</div>
-		<div><img src="./logo-romacair2.png" alt="logo romacair" class="w-20 md:w-32"/></div>
+		<div>
+			<a routerLink="/home" class="cursor-pointer"> <!-- Logo cliquable pour retourner à la page d'accueil -->
+				<img src="./dessin.png" alt="logo romacair" class="w-[5rem]" />
+			</a>
+		</div>
+
 		<div class="flexjustify-end">
 			<!-- Liens de navigation à droite du logo -->
-			<div class="hidden md:flex flex-grow justify-end md:justify-start gap-2">
+			<div class="hidden md:flex flex-grow justify-end md:justify-around ">
 				<a routerLink="/tarifs" class="text-sm md:text-lg mx-4 my-2 whitespace-nowrap underline-animation"
 				   [ngClass]="{'active': isActive('/tarifs')}">TARIFS</a>
 
@@ -59,7 +64,6 @@
 					   [ngClass]="{'active': isActive('/faq')}">FAQ</a>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </header>
@@ -70,58 +74,63 @@
 </main>
 
 
-<footer class="w-full p-4 bg-background text-primary-green">
+<footer class="bg-background text-primary-gree w-full p-4">
 	<!-- Wrapper centré et limité à 1280px -->
-	<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-8 md:gap-16 p-4 bg-background justify-between">
+	<div class="flex flex-col md:flex-row justify-between max-w-[1280px] mx-auto bg-background gap-8 md:gap-16 ">
 
 		<div class="flex-1/2">
 			<div class="inline-block">
-				<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green font-bold border-b border-solid border-primary-green">
+				<h2 class="text-fluid-sm text-primary-green leading-3 border-b border-solid border-primary-green mb-4">
 					ME CONTACTER :
 				</h2>
 			</div>
 
-			<ul>
+			<ul class="text-fluid-sm text-primary-green">
 				<li class="flex items-center gap-2 mb-2">
 					<i class="fa-duotone fa-solid fa-phone"></i>
-					<a href="tel:0665942420" class="text-primary-green email-style">06 65 94 24 20</a>
+					<a href="tel:0665942420" class="email-style">06 65 94 24 20</a>
 				</li>
 				<li class="flex items-center gap-2  mb-2">
 					<i class="fa-solid fa-envelope"></i>
-					<a href="mailto:romcaretattoo@gmail.com" class="text-primary-green email-style">romcaretattoo&#64;gmail.com</a>
+					<a href="mailto:romcaretattoo@gmail.com" class=" email-style">romcaretattoo&#64;gmail.com</a>
 				</li>
 				<li>
 					<a href="https://www.doctolib.fr/infirmier/paris/romain-keryhuel" class="font-bold"
 					   target="_blank" rel="noopener noreferrer">
-						<img src="./logo-doctolib.png" alt="plan d'accès" class="w-24 mb-6 mt-4"/>
+						<img src="./logo-doctolib.png" alt="plan d'accès" class="w-20 mb-6 mt-4"/>
 					</a>
 				</li>
 				<div class="inline-block">
-					<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green font-bold border-b border-solid border-primary-green">
+					<h2 class="text-fluid-sm text-primary-green leading-3 border-b border-solid border-primary-green mb-4">
 						ME SUIVRE :
 					</h2>
 				</div>
+
 				<!-- Lien réseaux sociaux alignés à droite -->
-				<div class="flex gap-4">
-					<a href="https://www.instagram.com/romcare_tattoo/" class="text-primary-green"
+
+				<div class="flex gap-4 text-primary-green text-fluid-xl">
+					<a href="https://www.linkedin.com/in/romain-keryhuel-a0911a209/"
+																			target="_blank" rel="noopener noreferrer">
+					<i class="fa-brands fa-linkedin social-icons"></i>
+				</a>
+					<a href="https://www.instagram.com/romcare_tattoo/"
 					   target="_blank" rel="noopener noreferrer">
-						<i class="fa-brands fa-square-instagram text-2xl social-icons"></i>
+						<i class="fa-brands fa-square-instagram social-icons"></i>
 					</a>
-					<a href="https://www.facebook.com/RomCareTattoo" class="text-primary-green"
+					<a href="https://www.facebook.com/RomCareTattoo"
 					   target="_blank" rel="noopener noreferrer">
-						<i class="fa-brands fa-square-facebook text-2xl social-icons"></i>
+						<i class="fa-brands fa-square-facebook social-icons"></i>
 					</a>
 				</div>
-
 			</ul>
 		</div>
 		<div class="flex-1/2">
 			<div class="inline-block">
-				<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green font-bold border-b border-solid border-primary-green">
+				<h2 class="text-fluid-sm text-primary-green leading-3 border-b border-solid border-primary-green mb-4">
 					HORAIRES :
 				</h2>
 			</div>
-			<ul class="leading-relaxed text-sm md:text-base lg:text-lg  md:space-y-2">
+			<ul class="leading-relaxed text-fluid-sm text-primary-green whitespace-nowrap ">
 				<li>Lun : 10h - 17h</li>
 				<li>Mar : 10h - 17h</li>
 				<li>Mer : 10h - 17h</li>
@@ -132,18 +141,17 @@
 			</ul>
 		</div>
 
-
 		<div class="flex-1/2">
 			<div class="inline-block">
-				<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green font-bold border-b border-solid border-primary-green">
+				<h2 class="text-fluid-sm text-primary-green leading-3 border-b border-solid border-primary-green mb-4">
 					M'Y RENDRE :
 				</h2>
 			</div>
-			<div class="flex items-center text-primary-green gap-2 mb-3">
+			<div class="flex items-center text-primary-green text-fluid-sm gap-2 mb-3">
 				<i class="fa-solid fa-location-dot"></i>
-				<p class=" text-primary-green">10-12 Villa Thoreton, 75015 Paris</p>
+				<p >10-12 Villa Thoreton, 75015 Paris</p>
 			</div>
-			<div class="w-full h-35 rounded overflow-hidden shadow-lg mt-2">
+			<div class="w-full h-35 rounded-2xl overflow-hidden shadow-md shadow-primary-green mt-2">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999709681986!2d2.2837228!3d48.8382942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6700cdeaf43e1%3A0xcd55b79d0fd8cdba!2s10%20Vla%20Thoreton%2C%2075015%20Paris!5e0!3m2!1sfr!2sfr!4v1639064342280!5m2!1sfr!2sfr"
 					width="100%"
@@ -156,21 +164,24 @@
 		</div>
 		<div class="flex-1/2 flex-col ">
 			<div class="inline-block">
-				<h2 class="text-lg leading-4 md:text-xl mb-4 text-primary-green font-bold border-b border-solid border-primary-green">
+				<h2 class="text-fluid-sm text-primary-green leading-3 border-b border-solid border-primary-green mb-4">
 					AFFILIATIONS :
 				</h2>
 			</div>
 			<div class="flex md:flex-col">
-				<img src="./logo-ordre-infirmier.png" alt="logo de l'order infirmier" class="w-20 md:w-24 "/>
+				<img src="./logo-ordre-infirmier.png" alt="logo de l'ordre infirmier" class="w-20 md:w-24 "/>
 				<img src="./logo-cpam.svg" alt="logo de la sécurité sociale" class="w-20 md:w-24 ml-10"/>
 			</div>
-
 		</div>
 	</div>
 	<div class="w-full mt-4 text-center">
-		<hr class="border-t border-solid border-primary-green mb-4">
-		<p class="text-primary-green font-bold "><small>Copyright 2024 - Tous droits réservés</small></p>
+		<hr class="border-t border-solid border-primary-green mb-4" aria-hidden="true">
+		<p class="text-primary-green text-fluid-xs"><small>Copyright &copy; 2024 - Tous droits réservés</small></p>
+		<p class="text-primary-green text-fluid-sm">
+			<small><a [routerLink]="['/mentions-legales']" class="text-primary-green underline email-style">Mentions légales</a></small>
+		</p>
 	</div>
+
 </footer>
 
 

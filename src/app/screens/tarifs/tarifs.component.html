@@ -1,19 +1,18 @@
-<div class="flex flex-col w-full mx-auto items-center">
+<div class="flex flex-col items-center w-full mx-auto ">
 <div	class="relative w-full h-[10rem] md:h-[15rem] bg-cover bg-center" style="background-image: url('./banner-pages.png')">
-	<app-banner [title]="'Tarifs des prestations'"></app-banner>
+	<app-banner [title]="'Tarifs des prestations'" class="whitespace-nowrap"></app-banner>
 </div>
 
-	<div class="w-full w-2/3  p-8 md:p-16 flex flex-col  max-w-[1280px]">
+	<div class="flex flex-col w-full w-2/3 max-w-[1280px] px-3 py-8 md:p-16">
 
-		<div class="w-full p-5 mb-4 space-y-8 text-primary-green">
+		<div class="w-full text-primary-green leading-relaxed p-5 mb-4">
 				<div>
-					<h2 class="text-xl md:text-2xl font-bold flex items-center justify-between">
+					<h2 class="flex items-center justify-between text-fluid-xl">
 						Première consultation explicative
-						<span class="dot-leader"></span>
-						<span class="font-bold">50€</span>
+						<span class="dot-leader hidden md:block"></span>
+						<span>Gratuite</span>
 					</h2>
-
-					<p class="mt-2 text-sm md:text-lg">
+					<p class="mt-2 text-fluid-sm leading-relaxed mb-8">
 						Explication du principe et déroulement de la dermopigmentation.<br>
 						Recueil du consentement, questionnaire de santé, consignes, prise de photos (gros plans).<br>
 						Le prix de la consultation est déduit de celui de la dermopigmentation.<br>
@@ -22,57 +21,75 @@
 				</div>
 
 				<div>
-					<h2 class="text-xl md:text-2xl font-bold flex items-center justify-between">Dermopigmentation aréole
-						mammaire simple
-						<span class="dot-leader"></span>
-						<span class=" font-bold">350€</span>
+					<h2 class="flex items-center justify-between text-fluid-xl ">
+						Dermopigmentation aréole mammaire simple
+						<span class="dot-leader hidden md:block"></span>
+						<span >125€</span>
 					</h2>
-					<p class="mt-2 text-sm md:text-lg">
+					<p class="mt-2 text-fluid-sm leading-relaxed mb-8">
 						Soin pour une seule aréole mammaire.<br>
-						Comprenant 2 séances de 2h environ, à intervalle de 45 jours.
+						Comprenant 2 séances de 2h environ, à intervalle de 45 jours.<br/>
+						<em>Pris en charge par l’assurance maladie sous conditions.</em>
 					</p>
 				</div>
 
 				<div>
-					<h2 class="text-xl md:text-2xl font-bold flex items-center justify-between">Dermopigmentation aréole
-						mammaire double
-						<span class="dot-leader"></span>
-						<span class="float-right font-bold">550€</span>
+					<h2 class="flex items-center justify-between text-fluid-xl ">
+						Dermopigmentation aréole mammaire double
+						<span class="dot-leader hidden md:block"></span>
+						<span >250€</span>
 					</h2>
-					<p class="mt-2 text-sm md:text-lg">
+					<p class="mt-2 text-fluid-sm leading-relaxed mb-8">
 						Soin pour deux aréoles mammaires.<br>
-						Comprenant 2 séances de 2h environ, à intervalle de 45 jours.
+						Comprenant 2 séances de 2h environ, à intervalle de 45 jours.<br/>
+						<em>Pris en charge par l’assurance maladie sous conditions.</em>
 					</p>
 				</div>
 
 				<div>
-					<h2 class="text-xl md:text-2xl font-bold flex items-center justify-between">Retouche
-						<span class="dot-leader"></span>
-						<span class="float-right font-bold">100€</span>
+					<h2 class="flex items-center justify-between text-fluid-xl ">
+						Retouche
+						<span class="dot-leader hidden md:block"></span>
+						<span>100€</span>
 					</h2>
-					<p class="mt-2 text-sm md:text-lg">
+					<p class="mt-2 text-fluid-sm leading-relaxed mb-8">
 						Séance d’entretien du tatouage, 3 ans après la dermopigmentation.<br>
 						D’une durée de 1h, permet de densifier les teintes de couleurs.
 					</p>
 				</div>
 		</div>
-		<div class="w-full p-5 mb-10">
-			<h2 class="font-bold text-lg md:text-xl my-2">MOYENS DE PAIEMENT</h2>
-			<p class="text-sm md:text-lg">Carte Bancaire & Espèces</p><br><br>
-			<h2 class="font-bold text-lg md:text-xl my-2 ">LÉGISLATION</h2>
-			<p class="text-sm md:text-lg mb-5">La dermopigmentation médicale doit être exercée par un professionnel de
+		<div class="w-full p-5">
+			<h2 class="flex items-center justify-between text-fluid-xl ">MOYENS DE PAIEMENT</h2>
+			<p class="mt-2 text-fluid-sm leading-relaxed mb-8">Carte Bancaire & Espèces</p><br><br>
+			<h2 class="flex items-center justify-between text-fluid-xl ">LÉGISLATION</h2>
+			<p class="mt-2 text-fluid-sm leading-relaxed mb-8">
+				La dermopigmentation médicale doit être exercée par un professionnel de
 				santé formé à la technique. Elle peut être réalisée par
 				une infirmière au moment du bloc opératoire, ou plus tard, en ambulatoire. [...] Seul le tatouage
 				médical est pris en charge et
-				remboursable sous conditions par l'Assurance Maladie, à hauteur de 125€ dans le cadre du parcours de
+				remboursable sous conditions par l'Assurance Maladie dans le cadre du parcours de
 				soins du patient ayant eu une
-				mastectomie dans le cadre d’un cancer du sein
+				mastectomie dans le cadre d’un cancer du sein.
 			</p>
-			<p class="text-sm md:text-lg">
+			<p class="mt-2 text-fluid-sm leading-relaxed mb-4">
+				Code acte CCAM: <strong>QEMB001 </strong>
+			</p>
+			<p class="mt-2 text-fluid-sm leading-relaxed">
+				Séance de réfection de l’aspect de la plaque aréolomamelonnaire par dermopigmentation.
+			</p>
+			<p class="mt-2 text-fluid-sm leading-relaxed ">
+				Base de remboursement: 125,4€
+			</p><br>
+			<p class="mt-2 text-fluid-sm leading-relaxed mb-4">
 				Code acte CCAM: <strong>QEMA009</strong>
 			</p>
+			<p class="mt-2 text-fluid-sm leading-relaxed ">
+				Reconstitution de la plaque aréolomamelonnairepar autogreffe de mamelon, avec dermopigmentation.
+			</p>
+			<p class="mt-2 text-fluid-sm leading-relaxed ">
+				Base de remboursement: 135.42€
+			</p>
 		</div>
-
 	</div>
 </div>
 

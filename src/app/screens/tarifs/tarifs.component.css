@@ -4,3 +4,8 @@
 	border-bottom: 1px dotted #000; /* couleur et style des points */
 	margin: 0 10px; /* espacement entre le texte et les points */
 }
+@media (max-width: 767px) { /* Ajustez la largeur selon vos besoins */
+	.dot-leader {
+		display: none; /* Masque les pointillés sur mobile */
+	}
+}

@@ -1,43 +1,45 @@
-<div class="flex flex-col w-full  mx-auto items-center bg-background">
+<div class="flex flex-col items-center bg-background w-full mx-auto ">
+<!--	composant banner pages-->
 	<div class="relative w-full h-[10rem] md:h-[15rem] bg-cover bg-center" style="background-image: url('./banner-pages.png')">
-		<app-banner [title]="'La dermopigmentation'"></app-banner>
+		<app-banner [title]="'La dermopigmentation'" ></app-banner>
 	</div>
 
 	<!-- Section 1 -->
-	<div class="flex flex-col md:flex-row justify-between text-primary-green bg-background w-full p-6 max-w-[1280px]">
-		<div class="flex flex-col text-primary-green p-4 md:pt-12 w-full md:w-2/3 md:pr-20">
-				<h1 class="font-bold text-xl md:text-2xl pb-4">
-					Chirurgie du sein et cancer : Comprendre les Impacts sur le Corps
-				</h1>
-				<p class="pb-4 text-sm md:text-lg">
-					Le cancer du sein est une maladie qui touche majoritairement la femme.
-				</p>
-				<p class="pb-4 text-sm md:text-lg">
-					Le cancer du sein est une maladie qui touche majoritairement la femme. Dans le cadre du traitement du cancer du sein, la chirurgie est souvent une étape nécessaire, qu’il s’agisse d’une mastectomie (ablation totale du sein) ou d'une tumorectomie (retrait partiel).
-				</p>
-				<p class="pb-4 text-sm md:text-lg">
-					Bien que ces interventions soient cruciales pour vaincre la maladie, elles peuvent profondément affecter l’apparence physique et l’image de soi. La perte ou la modification des seins, symbole de féminité, peut entraîner des sentiments de détresse émotionnelle, d'inconfort ou de perte de confiance en soi.
-				</p>
-				<p class="pb-4 text-sm md:text-lg">
-					Pour de nombreuses femmes, la reconstruction mammaire et la restauration de l’apparence des aréoles jouent un rôle essentiel dans le processus de guérison et de réappropriation de leur corps après le cancer.
-				</p>
+
+	<div class="flex flex-col md:flex-row justify-between text-primary-green bg-background w-full max-w-[1280px] p-6">
+		<div class="flex flex-col w-full md:w-2/3 p-4 md:pt-12 md:pr-20">
+			<h1 class="font-bold text-xl md:text-2xl pb-4 md:px-16 text-primary-green leading-relaxed self-center text-center">
+				Chirurgie du sein et cancer : Comprendre les Impacts sur le Corps
+			</h1>
+			<p class="text-fluid-sm pb-4">
+				Le cancer du sein est une maladie qui touche majoritairement la femme.
+			</p>
+			<p class="text-fluid-sm pb-4 leading-relaxed">
+				Dans le cadre du traitement du cancer du sein, la chirurgie est souvent une étape nécessaire, qu’il s’agisse d’une mastectomie (ablation totale du sein) ou d'une tumorectomie (retrait partiel).
+			</p>
+			<p class="text-fluid-sm pb-4 leading-relaxed">
+				Bien que ces interventions soient cruciales pour vaincre la maladie, elles peuvent profondément affecter l’apparence physique et l’image de soi. La perte ou la modification des seins, symbole de féminité, peut entraîner des sentiments de détresse émotionnelle, d'inconfort ou de perte de confiance en soi.
+			</p>
+			<p class="text-fluid-sm pb-4 leading-relaxed">
+				Pour de nombreuses femmes, la reconstruction mammaire et la restauration de l’apparence des aréoles jouent un rôle essentiel dans le processus de guérison et de réappropriation de leur corps après le cancer.
+			</p>
 		</div>
 		<!-- Image -->
-		<div class="flex items-center justify-center w-full md:w-1/3 md:order-last order-first md:ml-20">
-			<img src="./section-1.png" alt="images des pigments" class="w-full h-auto object-cover" />
+		<div class="flex items-center justify-center w-full md:w-1/3 order-last mb-4 md:ml-20 px-4">
+			<img src="./section-1.png" alt="photo contient le noeud de octobre rose et un stéthoscope " class="w-full h-auto object-cover rounded-3xl shadow-primary-green/60 shadow-lg" />
 		</div>
 	</div>
 
 	<!-- Section 2 -->
-	<div class="flex flex-col md:flex-row text-primary-green bg-background w-full p-6 max-w-[1280px]">
-		<div class="flex flex-col items-center justify-center md:mr-20">
-			<img src="./section-2.png" alt="images des pigments" class="w-full h-auto object-cover"/>
+	<div class="flex flex-col md:flex-row text-primary-green    bg-background w-full p-6 max-w-[1280px]">
+		<div class="flex flex-col items-center justify-center md:mr-20 mb-4 order-last md:order-first px-4">
+			<img src="./section-2.png" alt="photo illustrant la dermopigmentation médicale" class="w-full h-auto object-cover rounded-3xl shadow-primary-green/60 shadow-lg"/>
 		</div>
 		<div class="flex flex-col text-primary-green p-4 w-full md:w-2/3 md:pr-4 md:pl-20">
-				<h1 class="font-bold text-xl md:text-2xl pb-4 text-primary-green ">
+			<h1 class="font-bold text-xl md:text-2xl pb-4 md:px-8 text-primary-green leading-relaxed self-center text-center">
 					La dermopigmentation médicale des aréoles mammaires : Redonner Confiance et Harmonie
 				</h1>
-				<p class=" pb-4 text-sm md:text-lg ">
+			<p class="text-fluid-sm pb-4 leading-relaxed">
 					La dermopigmentation médicale des aréoles mammaires est une technique de tatouage spécialisée
 					qui vise à restaurer l’apparence naturelle des aréoles après une intervention chirurgicale, comme une
 					mastectomie ou une reconstruction mammaire. Ce soin s’adresse principalement aux femmes ayant
@@ -45,7 +47,7 @@
 					augmentation mammaire, ou encore aux personnes souhaitant corriger des asymétries naturelles.
 				</p>
 
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm pb-4 leading-relaxed">
 					L’objectif de cette technique est de redessiner et de pigmenter les aréoles pour recréer une illusion
 					de volume, de symétrie et de couleur, tout en s’adaptant à la morphologie et aux souhaits de chaque
 					patiente. Elle permet ainsi de restaurer non seulement l’aspect esthétique, mais aussi de renforcer la
@@ -53,84 +55,84 @@
 					chirurgie.
 				</p>
 
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm pb-4 leading-relaxed">
 					Grâce à des pigments spécifiques et une approche artistique, la dermopigmentation des aréoles offre
 					un résultat naturel et durable, redonnant aux patientes un sentiment d’accomplissement et de bien-
-					être
+					être.
 				</p>
 		</div>
 	</div>
 	<!-- Section 3 -->
 	<div class="flex flex-col md:flex-row text-primary-green bg-background w-full p-6 max-w-[1280px]">
 		<div class="flex flex-col text-primary-green p-4 w-full md:w-2/3 md:pr-4 md:mr-20">
-				<h1 class="font-bold text-xl md:text-2xl pb-4 text-primary-green ">
+				<h1 class="font-bold text-xl md:text-2xl pb-4 md:px-16 text-primary-green leading-relaxed self-center text-center">
 					Le déroulement d'une séance de dermopigmentation des aréoles mammaires
 				</h1>
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm leading-relaxed pb-4 leading-relaxed">
 					Une séance de dermopigmentation des aréoles mammaires se déroule en plusieurs étapes
 					soigneusement planifiées pour garantir un résultat naturel et personnalisé.
 				</p>
 
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm leading-relaxed pb-4 leading-relaxed">
 					Tout commence par une consultation détaillée, durant laquelle les attentes, les besoins et la
 					morphologie de chaque patiente sont pris en compte
 				</p>
 
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm pb-4 leading-relaxed">
 					Le jour de la séance, la zone à tatouer est désinfectée et des repères sont dessinés sur la peau.
 				</p>
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm pb-4 leading-relaxed">
 					Grâce à des pigments spécifiques adaptés à la carnation de la patiente, le praticien commence la
 					pigmentation minutieuse. Cette étape se déroule sous anesthésie locale pour assurer un confort
 					optimal.
 				</p>
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm pb-4 leading-relaxed">
 					La technique employée permet de recréer non seulement la couleur de l’aréole, mais également un
 					effet trompe-l’œil tridimensionnel, imitant l’apparence naturelle et la texture de l’aréole.
 				</p>
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm pb-4 leading-relaxed">
 					La séance se termine par des finitions artistiques, utilisant des nuances subtiles pour donner un effet
 					de profondeur et de réalisme. Ce résultat offre l'illusion d'une aréole en relief, recréant l'apparence
 					naturelle des seins avec une précision étonnante. Une fois le soin terminé, des recommandations
 					post-traitement sont données pour garantir une bonne cicatrisation et la durabilité des pigments.
 				</p>
-				<p class="pb-4 text-sm md:text-lg">
+			<p class="text-fluid-sm pb-4 leading-relaxed">
 					En général, une retouche peut être nécessaire après quelques semaines pour parfaire le résultat et
 					assurer une pigmentation durable.
 				</p>
 		</div>
-		<div class="flex items-center justify-center w-full md:w-1/3 md:order-last order-first md:ml-20">
-		<img src="./cabinet.png" alt="images des pigments" class="w-full h-auto object-cover"/>
+		<div class="flex items-center justify-center w-full md:w-1/3 order-last md:ml-20 mb-4 px-4">
+		<img src="./le-cabinet.jpg" alt="photo montrant l'intérieur du cabinet" class="w-full h-auto object-cover rounded-3xl shadow-primary-green/60 shadow-lg"/>
 	</div>
 	</div>
 	<!-- Section 4 -->
 	<div class="flex text-primary-green bg-primary-green w-full p-6">
 		<div class="flex flex-col max-w-[1280px] mx-auto md:flex-row ">
 			<!-- Texte à gauche -->
-			<div class="flex flex-col text-primary-green p-4 w-full md:w-2/3">
-				<h1 class="font-bold text-xl md:text-2xl pb-4 text-background">
+			<div class="flex flex-col md:p-10 p-4 w-full md:w-2/3">
+				<h1 class="text-fluid-xl  pb-4 text-background leading-relaxed self-center text-center">
 					Les pigments utilisés en dermopigmentation médicale
 				</h1>
-				<p class="pb-4 text-background text-sm md:text-lg">
+				<p class="pb-4 text-background text-fluid-sm  leading-relaxed">
 					Pour garantir un résultat à la fois esthétique, durable et sûr, la dermopigmentation des aréoles mammaires repose sur l’utilisation de pigments spécialement conçus pour les soins médicaux. Ces pigments, de qualité supérieure, sont biocompatibles, hypoallergéniques et répondent à des normes strictes de sécurité. Ils sont élaborés pour minimiser les risques de réactions cutanées et offrir une excellente tolérance, même sur des zones sensibles ou cicatrisées.
 				</p>
-				<p class="pb-4 text-background text-sm md:text-lg">
+				<p class="pb-4 text-background text-fluid-sm leading-relaxed">
 					L’un des aspects clés de ces pigments est leur capacité à se fondre harmonieusement avec la carnation naturelle de la peau. Ils sont disponibles dans une large gamme de teintes afin de reproduire fidèlement la couleur des aréoles, avec des nuances sur mesure pour chaque patiente. De plus, ces pigments sont conçus pour résister aux effets du temps et des agressions extérieures, garantissant ainsi une tenue longue durée, bien que des retouches puissent être envisagées pour préserver l’intensité des couleurs.
 				</p>
-				<p class="pb-4 text-background text-sm md:text-lg">
+				<p class="pb-4 text-background text-fluid-sm leading-relaxed">
 					Enfin, les pigments utilisés sont stériles et testés en laboratoire, offrant ainsi une sécurité optimale pour ce type de soin délicat. Leur composition permet également d’obtenir un effet de trompe-l’œil réaliste, apportant du relief et de la profondeur pour un rendu naturel.
 				</p>
 			</div>
 
 			<!-- Image et logos à droite -->
-			<div class="flex flex-col items-center w-full md:w-1/3 justify-center md:pl-4 md:ml-20">
-				<img src="./les-pigments.png" alt="images des pigments" class="w-full h-auto object-cover"/>
-				<div class="flex justify-center gap-6 mt-4">
-					<img src="./vegan-icon.png" alt="logo REACH" class="md:w-24 w-16 h-auto object-cover"/>
-					<img src="./REACH-logo.png" alt="logo REACH" class="md:w-24 w-16 h-auto object-cover"/>
+			<div class="flex flex-col justify-center items-center w-full md:w-1/3 md:ml-20 px-4 ">
+				<img src="./les-pigments.png" alt="images des flacons de pigments utiliser dans la dermopigmention médicale" class="w-full  object-cover rounded-3xl shadow-primary-green/40 shadow-lg"/>
+				<div class="flex justify-center gap-6 mt-8">
+					<img src="./vegan-icon.png" alt="logo vegan" class="md:w-24 w-16  object-cover"/>
+					<img src="./REACH-logo.png" alt="logo REACH" class="md:w-24 w-16  object-cover"/>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
+</div>

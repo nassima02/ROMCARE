@@ -3,19 +3,19 @@
 		 style="background-image: url('./banner-pages.png')">
 		<app-banner [title]="'Foire aux questions'"></app-banner>
 	</div>
-	<p class="py-10 sm:py-12 md:py-16 lg:py-20 text-center max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%]">
+	<p class="py-10 sm:py-12 md:py-16 lg:py-20 text-center max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] text-fluid-sm">
 		Vous trouverez dans cette foire à questions l'ensemble des informations sur la dermopigmentation médicale
 	</p>
-	<!-- FAQ item -->
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+<!--	 FAQ item-->
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
 			<p>La dermopigmentation médicale peut avoir plusieurs appellations :</p><br>
 			<ul class="list-disc ml-6 sm:ml-8">
 				<li>Tatouage médical</li>
@@ -23,7 +23,7 @@
 			</ul><br>
 			<p>Après ablation d’un sein (mammectomie) pour le traitement d’un cancer du sein, une reconstruction
 				mammaire est possible et elle peut inclure une reconstruction du mamelon et de l’aréole (le cercle de
-				couleur qui entoure le mamelon)
+				couleur qui entoure le mamelon).
 			</p><br>
 			<p>La reconstruction aérolo-mamelonnaire peut être chirurgicale. Si la patiente ne souhaite pas une
 				chirurgie, elle peut bénéficier d’un tatouage médical de l'aréole ou dermopigmentation.
@@ -55,15 +55,17 @@
 
 	</div>
 
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">Quels sont les risques du tatouage permanent ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
 			<p>Le plus souvent, le tatouage se passe bien. Le respect des règles de réalisation et des soins apportés
 				après le tatouage garantissent un déroulement sans problème.
 			</p><br>
@@ -74,17 +76,17 @@
 		</div>
 	</div>
 
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">La dermopigmentation médicale présente-t-elle des risques de complications ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
-			<p class="pl-8">
-				1. Les complications aiguës du tatouage
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
+			<p >
+			1. Les complications aiguës du tatouage
 			</p><br>
 			<p>Douleurs au niveau de la peau tatouée et malaise</p><br>
 			<p>
@@ -104,7 +106,7 @@
 				<li>Des lésions plus ou moins importantes essentiellement sur le tatouage ;</li>
 				<li>Une réaction urticarienne, éruption rouge (érythémateuse)...</li>
 			</ul><br>
-			<p class="pl-8">
+			<p>
 				2. Les complications aiguës infectieuses après tatouage
 			</p><br>
 			<p>Il peut s’agir :</p><br>
@@ -127,7 +129,7 @@
 				geste si le matériel utilisé est contaminé, mal nettoyé et/ou mal stérilisé.</p><br>
 			<p>La vaccination contre l’hépatite B de la personne souhaitant un tatouage ainsi que pour le tatoueur
 				est recommandée avant sa réalisation.</p><br>
-			<p class="pl-8">
+			<p >
 				3. Les complications chroniques du tatouage
 			</p><br>
 			<p>Ces complications surviennent longtemps après l’acte de tatouage, et peuvent se révéler parfois
@@ -142,7 +144,7 @@
 				<li>Cette insatisfaction peut également être en lien avec une gêne psychosociale</li>
 				<li>Ou le regret d’avoir été tatoué.</li>
 			</ul><br>
-			<p class="pl-8">
+			<p>
 				4. Les réactions inflammatoires de la peau après tatouage
 			</p><br>
 			<p>Les réactions inflammatoires de la peau sont les complications chroniques les plus fréquentes. Ces
@@ -172,11 +174,11 @@
 			</ul><br>
 			<p>La réactivation d'une sarcoïdose ancienne (maladie systémique définie par sa lésion histologique : un
 				granulome inflammatoire sans nécrose caséeuse), ou l'apparition d'une sarcoïdose induite après
-				tatouage est possible, particulièrement avec les encres noires</p><br>
+				tatouage est possible, particulièrement avec les encres noires.</p><br>
 			<p>La survenue de tumeurs cancéreuses de la peau (mélanomes, carcinomes…), en raison de la présence
 				de produits potentiellement cancérigènes dans les encres de tatouage, est à l’étude. Il n’existe pas à
 				ce jour de lien de causalité démontré.</p><br>
-			<p class="pl-8">
+			<p>
 				5. Tatouage et gêne à la réalisation de certains soins et examens
 			</p><br>
 			<p>Les tatouages peuvent gêner les soins et entraîner certains risques :</p><br>
@@ -189,15 +191,15 @@
 	</div>
 
 
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">Mon état de santé me permet-il le tatouage ou le maquillage permanent ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
 			<p>Certaines personnes sont plus exposées aux complications. Parler à son médecin traitant avant de se
 				faire tatouer est utile. Il peut conseiller, et alerter les personnes les plus exposées aux complications.
 				C’est le cas des personnes qui présentent :
@@ -232,15 +234,15 @@
 		</div>
 	</div>
 
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">A qui s’adresser pour bénéficier du tatouage ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
 			<p>Le tatouage est un acte qui doit être réalisé par un professionnel. La fonction du tatoueur est
 				encadrée par l’agence régionale de santé (ARS) et ses manières d’exercer doivent respecter un certain
 				nombre de critères d’hygiène pour assurer la sécurité de ses actes.
@@ -249,15 +251,15 @@
 		</div>
 	</div>
 
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">Qui peut être professionnel du tatouage ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
 			<p>Les professionnels du tatouage et du maquillage permanent ont l'obligation de déclarer la création, la
 				cessation et le transfert de leur activité auprès de l'Agence régionale de la santé (ARS) de leur région.
 			</p><br>
@@ -276,15 +278,87 @@
 		</div>
 	</div>
 
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">Pourquoi choisir un(e) infirmier(ère) ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
+			<p>Être pris en charge par un professionnel de santé spécialisé dans
+				le cadre de la dermopigmentation d’aréole mammaire présente
+				plusieurs avantages importants :</p><br>
+			<p>
+				1. Expertise en soins post-opératoires :
+			</p><br>
+			<p>Un professionnel de santé est formé(e) et diplômé(e) pour comprendre
+				les spécificités des soins après une mastectomie, ce qui inclut
+				l’évaluation de la peau cicatricielle et la prise en compte des
+				sensibilités physiques du patient. Leur expertise garantit que
+				la procédure de dermopigmentation est adaptée aux besoins de
+				chaque patient(e) tout en évitant les complications.</p><br>
+			<p>
+			2. Accompagnement global :
+			</p><br>
+			<p>Les infirmier(e)s, de par leur rôle dans le parcours de soins, offrent un accompagnement holistique. Ils/elles ne se limitent pas à l’aspect esthétique, mais s’assurent aussi du bien-être psychologique et émotionnel des patientes,
+				en tenant compte de leur vécu, de leur fatigue, ou de leur anxiété.</p><br>
+			<p>
+			3. Relation de confiance :
+		</p><br>
+			<p>Grâce à leur proximité avec les patientes tout au long du traitement, les infirmier(e)s créent un lien de confiance qui permet d’aborder cette étape intime avec plus de sérénité. Ils sont souvent présents dès le diagnostic et
+				jusqu’au suivi post-chirurgical, ce qui en fait des figures de soutien.</p><br>
+			<p>
+			4. Connaissance des remboursements et des démarches administratives :
+			</p><br>
+			<p>Les infirmier(e)s sont également familiers avec les modalités de prise en charge par l’Assurance Maladie. Ils peuvent donc informer, conseiller et aider les patientes dans leurs démarches pour bénéficier des remboursements, facilitant ainsi l’accès à ce soin essentiel.
+			</p><br>
+			<p>Dans le cadre de la dermopigmentation d’aréole mammaire, c’est un acte médical délégable à un(e) infirmière dans le cadre du parcours de soins, c’est à dire, sur ordonnance ou recommandation écrite.
+			</p><br>
+			<p>En somme, se faire accompagner par un(e) infirmier(ère) dans cette démarche garantit une approche humaine, professionnelle et intégrée, tout en optimisant la qualité du soin et le confort du patient.
+			</p><br>
+		</div>
+	</div>
+
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-fluid-md text-primary-green">Comment obtenir le remboursement par l’Assurance Maladie et ma mutuelle ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
+			<p>La prise en charge du tatouage médical par l’Assurance Maladie et votre mutuelle n’est possible que si l’acte est réalisé par un professionnel de santé (médecin ou infirmier).
+			</p><br>
+
+			<p> La base remboursement de l’assurance maladie est de 125.4€ ou 135,42€ selon si le chirurgien a effectué ou non une reconstruction du mamelon en amont de la dermopigmentation.
+			</p><br>
+			<p>  Par exemple, pour une dermopigmentation simple à 350€, avec une base de remboursement de 135.42€, si la patiente est à en ALD, à 100%, la sécurité sociale lui remboursera 135.42€.
+				De plus, si la mutuelle prend les soins liés à l’ALD à 100%, celle-ci effectuera un remboursement de 135,42€.
+				Soit un total de 270,84€ remboursé sur une facture de 350€.
+			</p><br>
+
+			<p>Lors de la visite de suivi avec votre chirurgien, en fonction des protocoles prédéfinis avec le professionnel de santé qui effectuera la dermopigmentation et la structure hospitalière, la demande de remboursement sera demandée.</p><br>
+
+			<p>Par ailleurs, une lettre d’orientation et une ordonnance de soins pourra être demandée par le professionnel de santé qui effectuera la dermopigmentation, il est nécessaire de la demander lors de la consultation post-opératoire avec le chirurgien.</p><br>
+
+			<p>Enfin, n’hésitez pas à demander, à votre professionnel de santé qui effectuera la dermopigmentation, un devis et/ou une facture que vous pourrez transmettre à votre mutuelle.
+
+			</p><br>
+
+		</div>
+	</div>
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+
+		<!-- Question -->
+		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
+			<span class="text-fluid-md text-primary-green">Comment se déroule une séance de dermopigmentation des aréoles mammaires ?</span>
+			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
+		</button>
+		<!-- Réponse (cachée par défaut) -->
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
 			<p>Avant de se faire faire un tatouage, prenez le temps de réfléchir à votre projet de tatouage : l’encre
 				est indélébile et le détatouage difficile et onéreux.
 			</p><br>
@@ -298,29 +372,29 @@
 			<p>La veille du tatouage, évitez l’alcool et les médicaments contenant de l’aspirine.</p><br>
 			<p>Demandez au tatoueur s’il est nécessaire de raser ou épiler la zone. Le laisser faire s’il le conseille.</p><br>
 			<p>Le professionnel du tatouage doit respecter une procédure bien définie.</p><br>
-			<p class="pl-8">
+			<p>
 				1. Le recueil de votre consentement
 			</p><br>
 			<p>Ce recueil de votre consentement est écrit si le tatouage concerne votre enfant de moins de 18 ans.
 				Le tatouage est déconseillé tant que la croissance n’est pas achevée.</p><br>
 
-			<p class="pl-8">
+			<p >
 				2. Votre information
 			</p><br>
 			<p>Le tatoueur vous informe des risques et précautions à respecter après la réalisation des techniques
 				de tatouage par effraction cutanée et de maquillage permanent.</p><br>
 			<p>Cette information est délivrée oralement et affichée de manière visible dans le local où la technique
 				est mise en œuvre. Elle vous est également remise par écrit.</p><br>
-			<p class="pl-8">
+			<p>
 				3. Votre déclaration sur l'honneur
 			</p><br>
 			<p>Le tatoueur vous demande de signer une déclaration attestant que vous :</p><br>
-			<ul class="list-disc ml-6 sm:ml-8">
+			<ul >
 				<li>n’avez pas d’allergies ;</li>
 				<li>n’êtes pas sous l’emprise de drogues ou d’alcool ;</li>
 				<li>avez bien mangé dans les 24 heures précédant le tatouage ; l’autorisez à tatouer.</li>
 			</ul><br>
-			<p class="pl-8">
+			<p>
 				4. Les règles d’hygiène et de salubrité
 			</p><br>
 			<p>Le tatoueur s'engage à respecter les bonnes pratiques d’hygiène et de salubrité applicables à son
@@ -338,7 +412,7 @@
 				utiliser une buse, un manchon, et une tige porte-aiguille stérilisés ;</p><br>
 			<p>Le respect des règles concernant l’hygiène des mains par lavage ou friction hydro-alcoolique ;</p><br>
 			<p>La désinfection de la peau ou de la muqueuse avant le tatouage en utilisant un antiseptique ;</p><br>
-			<p class="pl-8">
+			<p >
 				5. Les produits de tatouage utilisés
 			</p><br>
 			<p>Un produit de tatouage est défini comme « toute substance ou préparation colorante destinée, par
@@ -349,8 +423,8 @@
 			<p>La mise sur le marché d’un produit de tatouage est conditionnée au respect de plusieurs exigences
 				visant à s’assurer que le produit respecte les règles de composition et ne nuit pas à la santé humaine
 				dans les conditions normales ou raisonnablement prévisibles d’utilisation (Code de la santé publique :
-				Chapitre X : Produits de tatouage (Articles L513-10-1 à L513-10-10))</p><br>
-			<p class="pl-8">
+				Chapitre X : Produits de tatouage (Articles L513-10-1 à L513-10-10)).</p><br>
+			<p >
 				6. La réalisation du tatouage
 			</p><br>
 			<p>Prenez le temps de discuter avec le professionnel du tatouage que vous souhaitez, de son motif et
@@ -370,21 +444,21 @@
 		</div>
 	</div>
 
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">Quels soins apporter après un tatouage et quand consulter ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
 			<p>Après la réalisation d’un tatouage, la zone est rouge, enflée et douloureuse durant quelques heures.
 				Au bout de quelques jours, une fine desquamation (des pellicules de peau qui apparaissent) est
 				possible. La cicatrisation du tatouage prend 3 à 4 semaines. Pendant cette période, vous devrez le
 				surveiller attentivement.
 			</p><br>
-			<p class="pl-8">
+			<p >
 				1. Précautions standards
 			</p><br>
 			<p>Pour faciliter la cicatrisation sans complication, il est important de :</p><br>
@@ -396,7 +470,7 @@
 				<li>Ne pas arracher les croûtes</li>
 				<li>D’éviter l’alcool et les drogues</li>
 			</ul><br>
-			<p class="pl-8">
+			<p>
 				2. Recommandations de soins
 			</p><br>
 			<p>Le lendemain matin, retirez le pansement délicatement à l’aide d’une compresse stérile NON TISSEE :</p><br>
@@ -408,22 +482,22 @@
 				<li>Laisser à l’air libre (si soutien-gorge, utilisez des compresses stériles non tissées pour couvrir
 					le tatouage)</li>
 			</ul><br>
-			<p class="pl-8">
+			<p >
 				3. Avis médical
 			</p><br>
 			<p>Au moindre signe de complication, douleur, sensation de chaleur, rougeur, gonflement, n’hésitez pas
 				à consulter votre médecin traitant.</p><br>
 		</div>
 	</div>
-	<div class="border border-primary-green rounded-lg w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
+	<div class="border border-primary-green rounded-3xl w-full max-w-[90%] sm:max-w-[80%] md:max-w-[1000px] mb-4">
 
 		<!-- Question -->
 		<button  class="flex justify-between items-center w-full font-bold p-4 sm:p-5 md:p-6 text-left focus:outline-none" (click)="toggleAccordion($event)">
-			<span class="text-base sm:text-lg md:text-xl font-medium text-primary-green">Qu’est-ce que la dermopigmentation médicale des aréoles mammaires ?</span>
+			<span class="text-fluid-md text-primary-green">Que faire en cas de complications dans les mois suivant un tatouage ?</span>
 			<i class="fa fa-plus text-primary-green"></i> <!-- Changer la couleur ici -->
 		</button>
 		<!-- Réponse (cachée par défaut) -->
-		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green">
+		<div class="hidden border-t border-primary-green w-full p-4 sm:p-5 md:p-6 text-primary-green text-fluid-sm leading-relaxed">
 			<p>En cas d’allergie : certains types de peau sont allergiques aux produits de tatouage. Cette allergie
 				n’apparaît pas toujours précocement. Elle se traduit par des dermatites qui, lorsqu’elles ne sont pas
 				vite traitées, peuvent causer une surinfection bactérienne.

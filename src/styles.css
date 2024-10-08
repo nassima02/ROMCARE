@@ -10,6 +10,10 @@
   --background: #ece7e6;
 }
 
+body {
+	@apply text-fluid-base;
+}
+
 /* Définition des polices */
 @font-face {
   font-family: Brastag-regular;
@@ -32,7 +36,7 @@
 }
 
 h1, h2, h3, span,a {
-  font-family: Brastag-Bold;
+  font-family: Brastag-bold;
   letter-spacing: 0.07em;
   color: var(--primary-green);
 }

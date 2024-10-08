@@ -11,6 +11,7 @@ module.exports = {
         'background': '#ece7e6',
       },
       fontSize: {
+	    'fluid-xs': ['clamp(0.75rem, 0.7rem + 0.1vw, 0.875rem)', {lineHeight: 'clamp(1rem, 0.95rem + 0.1vw, 1.125rem)'}],
         'fluid-base': ['clamp(1rem, 0.9rem + 0.4vw, 1.25rem)', {lineHeight: 'clamp(1.5rem, 1.4rem + 0.3vw, 1.75rem)'}],
         'fluid-sm': ['clamp(0.875rem, 0.85rem + 0.2vw, 1rem)', {lineHeight: 'clamp(1.25rem, 1.2rem + 0.2vw, 1.5rem)'}],
         'fluid-lg': ['clamp(1.125rem, 1rem + 0.3vw, 1.375rem)', {lineHeight: 'clamp(1.625rem, 1.5rem + 0.35vw, 1.875rem)'}],

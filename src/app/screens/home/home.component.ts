@@ -41,32 +41,3 @@ export class HomeComponent implements AfterViewInit {
 		this.router.navigate(['/la-dermopigmentation']);
 	}
 }
-
-
-
-// import { Component } from '@angular/core';
-// import { Router } from '@angular/router'; // Importer Router
-// import { ButtonComponent } from "../../shared/components/button/button.component";
-//
-// @Component({
-//   selector: 'app-home',
-//   standalone: true,
-//   imports: [
-//     ButtonComponent
-//   ],
-//   templateUrl: './home.component.html',
-//   styleUrls: ['./home.component.css'] // Corriger le nom de la propriété
-// })
-// export class HomeComponent {
-//
-//   constructor(private router: Router) {}
-//
-//   handleContactClick() {
-//     // Naviguer vers l'onglet de contact
-//     this.router.navigate(['/contact']);
-//   }
-//
-//   handleRdvClick() {
-//     window.open('https://www.doctolib.fr/infirmier/paris/romain-keryhuel', '_blank');
-//   }
-// }

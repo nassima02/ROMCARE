@@ -1,0 +1,111 @@
+.pause-button {
+	display: none; /* Cacher le bouton pause par défaut */
+	position: absolute; /* Positionnement pour superposer au bouton play */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1; /* Assurez-vous que le bouton est au-dessus de la vidéo */
+	background-color: rgba(0, 0, 0, 0.2); /* Fond semi-transparent */
+	border: none;
+	border-radius: 50%; /* Arrondir le bouton */
+	width: 60px; /* Largeur du bouton */
+	height: 60px; /* Hauteur du bouton */
+	display: flex; /* Flex pour centrer l'icône */
+	justify-content: center;
+	align-items: center;
+	color: white; /* Couleur de l'icône */
+}
+
+.play-button {
+	position: absolute; /* Positionnement pour superposer au bouton pause */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1; /* Assurez-vous que le bouton est au-dessus de la vidéo */
+	background-color: rgba(0, 0, 0, 0.2); /* Fond semi-transparent */
+	border: none;
+	border-radius: 50%; /* Arrondir le bouton */
+	width: 60px; /* Largeur du bouton */
+	height: 60px; /* Hauteur du bouton */
+	display: flex; /* Flex pour centrer l'icône */
+	justify-content: center;
+	align-items: center;
+	color: white; /* Couleur de l'icône */
+}
+
+.video-container video:not(:playing) + .play-button {
+	display: flex; /* Afficher le bouton lecture si la vidéo est en pause */
+}
+
+.video-container video:playing + .pause-button {
+	display: flex; /* Afficher le bouton pause si la vidéo est en lecture */
+}
+.video-container {
+	background-color: white; /* Assurez-vous qu'il n'y ait pas de couleur de fond */
+
+}
+
+/******************************************************************************/
+/*.timeline-container {*/
+/*	width: 100%;*/
+/*	max-width: 1200px; !* Limitez la largeur de la timeline *!*/
+/*	margin: 0 auto; !* Centrez la timeline sur la page *!*/
+/*	padding: 20px; !* Ajoutez un peu d'espace autour de la timeline *!*/
+/*	background-color: #496569; !* Couleur de fond pour rendre la timeline visible *!*/
+/*}*/
+
+/*.timeline {*/
+/*	display: flex; !* Utiliser flexbox pour l'alignement horizontal *!*/
+/*	justify-content: flex-start; !* Aligner les éléments au début par défaut *!*/
+/*	align-items: flex-start; !* Aligner les éléments en haut *!*/
+/*	margin: 20px 0; !* Ajoutez un peu d'espace en haut et en bas *!*/
+/*}*/
+
+/*.flex-end {*/
+/*	justify-content: flex-end; !* Aligner les éléments à droite *!*/
+/*}*/
+
+/*.timeline-item {*/
+/*	position: relative;*/
+/*	text-align: center; !* Centrer le texte *!*/
+/*	color: #ece7e6; !* Couleur du texte *!*/
+/*	width: 20%; !* Ajuster la largeur des éléments de la timeline *!*/
+/*	margin: 0; !* Retirer toute marge *!*/
+/*}*/
+
+/*!* Styles pour les éléments avec année *!*/
+/*.timeline-item.up::after {*/
+/*	content: "";*/
+/*	position: absolute;*/
+/*	left: 50%; !* Aligner au centre de l'élément *!*/
+/*	top: 100%; !* Positionner la ligne sous l'élément *!*/
+/*	transform: translateX(-50%); !* Centrer horizontalement *!*/
+/*	width: 2px; !* Épaisseur de la ligne *!*/
+/*	height: 40px; !* Longueur de la ligne *!*/
+/*	background-color: #ece7e6; !* Couleur de la ligne *!*/
+/*}*/
+
+/*.timeline-item.down::after {*/
+/*	content: "";*/
+/*	position: absolute;*/
+/*	left: 50%; !* Aligner au centre de l'élément *!*/
+/*	top: auto; !* Pas besoin de positionner par rapport à l'élément *!*/
+/*	bottom: 100%; !* Positionner la ligne au-dessus de l'élément *!*/
+/*	transform: translateX(-50%); !* Centrer horizontalement *!*/
+/*	width: 2px; !* Épaisseur de la ligne *!*/
+/*	height: 40px; !* Longueur de la ligne *!*/
+/*	background-color: #ece7e6; !* Couleur de la ligne *!*/
+/*}*/
+
+/*!* Styles pour les éléments sans année *!*/
+/*.timeline-item.no-year::after {*/
+/*	content: none; !* Ne pas afficher la ligne verticale *!*/
+/*}*/
+
+/*!* Styles pour les années et événements *!*/
+/*.timeline-year,*/
+/*.timeline-event {*/
+/*	margin: 0; !* Retirer toute marge des années et événements *!*/
+/*	padding: 0; !* Retirer toute marge interne si nécessaire *!*/
+/*	font-size: 1em; !* Ajuster la taille de la police si besoin *!*/
+/*}*/

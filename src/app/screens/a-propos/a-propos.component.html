@@ -1,6 +1,106 @@
-<div class="flex flex-col w-full mx-auto items-center">
+<div class="flex flex-col ">
 	<div class="relative w-full h-[10rem] md:h-[15rem] bg-cover bg-center"
 		 style="background-image: url('./banner-pages.png')">
-		<app-banner [title]="'A propos de moi'"></app-banner>
+		<app-banner [title]="'A propos'"></app-banner>
 	</div>
+	<div class="flex flex-col bg-background items-center justify-center w-full pt-16 ">
+
+		<div class="text-primary-green text-fluid-sm leading-relaxed md:mb-16 text-center px-4">
+			<p class="text-fluid-sm"><em><strong>“Infirmier et artiste, je redonne vie à une apparence naturelle après une chirurgie.”</strong></em></p>
+		</div>
+
+		<div class="flex flex-col md:flex-row justify-between items-center overflow-hidden h-auto max-w-[1280px] w-full mb-16 px-10"> <!-- Ajout de px-4 -->
+			<!-- Section texte -->
+			<div class="flex flex-col justify-center w-full md:w-1/2 md:pr-18">
+				<h1 class="text-primary-green text-fluid-xl mt-10 mb-4 text-center leading-relaxed">Qui suis-je ?</h1>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">Je m’appelle Romain et je suis infirmier depuis 2011.</p><br>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">J’ai d’abord débuté à l’hôpital dans plusieurs services en oncologie, et depuis 2018, j’exerce le métier en libéral.</p><br>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">Chaque jour, je rencontre et prends soin de patient(e)s touché(e)s par le cancer. Je les accompagne, au mieux, tout au long de leur parcours de soins.</p><br>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">Au-delà du soin, mes passions sont le dessin et le tatouage.</p>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">En 2020, et après la période de crise sanitaire, j’ai ressenti le besoin de me centrer sur ces deux passions.</p>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">Je m’inscris alors à des cours intensifs de peinture et de dessin.</p>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">J’y ai découvert ma sensibilité artistique.</p><br>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">En parallèle, je me forme au tatouage en auto-didacte et échange régulièrement avec des tatoueurs professionnels pour recueillir leurs avis sur mes réalisations.</p><br>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">Depuis 2 ans, je me forme, de manière professionnelle, à la dermopigmentation médicale de l’aréole mammaire.</p>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">C’est un moyen de rassembler toutes mes compétences dans la concrétisation d’un rêve artistique.</p>
+			</div>
+			<!-- Image -->
+				<img src="./Photo-Romain-A-propos.webp" alt="Portrait de Romain" class="object-cover mt-10 w-[400px] order-first md:order-last overflow-hidden rounded-3xl shadow-primary-green shadow-lg"/>
+		</div>
+
+		<div class="flex flex-col md:flex-row items-center justify-between overflow-hidden h-auto max-w-[1280px] w-full md:py-16 pb-16 px-10">
+			<!-- Image -->
+				<img src="./areole-mammaire.png" alt="Aréole mammaire" class="object-cover rounded-3xl shadow-primary-green shadow-lg  md:h-[311px] md:w-[301px] w-[201px] h-[211px] order-last md:order-first overflow-hidden mt-6 md:mt-0" />
+			<!-- Section texte -->
+			<div class="flex flex-col w-full md:w-1/2 ">
+				<h1 class="text-primary-green text-fluid-xl m-4 leading-relaxed text-center">Pourquoi la dermopigmentation médicale ?</h1>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">Bien plus qu’un simple tatouage, c’est un acte médical remboursé par l’Assurance Maladie et encadré par des règles strictes qui garantit au patient une qualité de soin.</p><br>
+				<p class="text-primary-green text-fluid-sm leading-relaxed">En tant que professionnel de santé, les actes que je prodigue font partie du parcours de soins du patient.</p><br>
+				<p class="text-primary-green text-fluid-sm pb-0 leading-relaxed"><strong>Mon objectif : Redonner confiance et bien-être à mes patients, tout en respectant les normes médicales et éthiques.</strong></p><br>
+			</div>
+		</div>
+
+<!--deuxième section-->
+
+		<div class="flex flex-col text-primary-green bg-primary-green w-full justify-center items-center  py-16">
+			<h2 class="text-background text-fluid-2xl lg:mb-16 md:mb-12 mb-8 text-center md:px-16 px-10">Mon parcours</h2>
+
+			<!-- Timeline pour desktop et tablette -->
+			<div class="overflow-hidden  w-full max-w-[1280px] pb-8 hidden md:block px-16 "> <!-- masqué sur mobile -->
+				<div class=" w-full flex justify-center">
+				<img src="./timeline.png" alt="Timeline" />
+					</div>
+			</div>
+
+			<!-- Timeline pour mobile -->
+			<div class="overflow-hidden  max-w-[1280px] pb-8 block md:hidden md:block  px-4"> <!-- masqué sur tablette et desktop -->
+				<div class="max-w-[1280px]  flex justify-center">
+				<img src="./timeline-vertical.png" alt="Timeline" />
+					</div>
+			</div>
+
+			<!--			fin tileline-->
+			<h2 class="text-background text-fluid-2xl lg:py-18 md:py-16 py-12  text-center md:px-16 px-10">Mes essais et créations</h2>
+
+			<div class="flex flex-col md:flex-row w-full max-w-[1280px] lg:gap-28 md:gap-8 gap-12  md:px-16 px-10">
+				<div class="flex-1 overflow-hidden rounded-3xl mx-4 h-[300px] relative video-container">
+					<video id="video1" class="object-cover w-full h-full aspect-square" preload="auto" playsinline muted poster="./apercu-video-1.jpg" (click)="togglePlay('video1')">
+						<source src="./Vidéo-Aréole-Position-1.mp4" type="video/mp4">
+						Votre navigateur ne supporte pas la lecture de vidéos.
+					</video>
+					<div class="play-button absolute inset-0 flex justify-center items-center" (click)="togglePlay('video1')">
+						<i class="fa-solid fa-play"></i>
+					</div>
+					<div class="pause-button absolute inset-0 flex justify-center items-center hidden" (click)="togglePlay('video1')">
+						<i class="fa-solid fa-pause"></i>
+					</div>
+				</div>
+				<div class="flex-1 overflow-hidden rounded-3xl mx-4 h-[300px]  relative video-container">
+					<video id="video2" class="object-cover w-full h-full aspect-square" preload="auto" playsinline muted poster="./apercu-video-2.jpg" (click)="togglePlay('video2')">
+						<source src="./Vidéo-Aréole-Position-2.mp4" type="video/mp4">
+						Votre navigateur ne supporte pas la lecture de vidéos.
+					</video>
+					<div class="play-button absolute inset-0 flex justify-center items-center" (click)="togglePlay('video2')">
+						<i class="fa-solid fa-play"></i>
+					</div>
+					<div class="pause-button absolute inset-0 flex justify-center items-center hidden" (click)="togglePlay('video2')">
+						<i class="fa-solid fa-pause"></i>
+					</div>
+				</div>
+				<div class="flex-1 overflow-hidden rounded-3xl mx-4 h-[300px]  relative video-container">
+					<video id="video3" class="object-cover w-full h-full aspect-square" preload="auto" playsinline muted poster="./apercu-video-3.jpg" (click)="togglePlay('video3')">
+						<source src="./Vidéo-Aréole-Position-3.mp4" type="video/mp4">
+						Votre navigateur ne supporte pas la lecture de vidéos.
+					</video>
+					<div class="play-button absolute inset-0 flex justify-center items-center" (click)="togglePlay('video3')">
+						<i class="fa-solid fa-play"></i>
+					</div>
+					<div class="pause-button absolute inset-0 flex justify-center items-center hidden" (click)="togglePlay('video3')">
+						<i class="fa-solid fa-pause"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>

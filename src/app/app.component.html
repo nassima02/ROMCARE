@@ -1,4 +1,4 @@
-<header class="sticky top-0 left-0 w-full bg-background shadow-sm shadow-primary-green p-4 z-30 ">
+<header class="sticky top-0 left-0 w-full bg-background shadow-sm shadow-primary-green p-3 z-30 ">
 
 	<div class="flex justify-between md:grid md:grid-cols-[1fr_128px_1fr] items-center gap-6 max-w-[1280px] mx-auto">
 		<!-- Liens de navigation à gauche du logo -->
@@ -15,7 +15,7 @@
 		</div>
 		<div>
 			<a routerLink="/home" class="cursor-pointer"> <!-- Logo cliquable pour retourner à la page d'accueil -->
-				<img src="./dessin.png" alt="logo romacair" class="w-[5rem]" />
+				<img src="./logo-romcare.svg" alt="logo romacair" class="w-[80px]" />
 			</a>
 		</div>
 
@@ -74,7 +74,7 @@
 </main>
 
 
-<footer class="bg-background text-primary-gree w-full p-4">
+<footer class="bg-background text-primary-gree w-full p-4 px-8">
 	<!-- Wrapper centré et limité à 1280px -->
 	<div class="flex flex-col md:flex-row justify-between max-w-[1280px] mx-auto bg-background gap-8 md:gap-16 ">
 
@@ -130,7 +130,8 @@
 					HORAIRES :
 				</h2>
 			</div>
-			<ul class="leading-relaxed text-fluid-sm text-primary-green whitespace-nowrap ">
+			<!-- Horaires détaillés, visibles uniquement sur les écrans plus larges -->
+			<ul class="leading-relaxed text-fluid-sm text-primary-green whitespace-nowrap hidden sm:block">
 				<li>Lun : 10h - 17h</li>
 				<li>Mar : 10h - 17h</li>
 				<li>Mer : 10h - 17h</li>
@@ -139,7 +140,12 @@
 				<li>Sam : Fermé</li>
 				<li>Dim : Fermé</li>
 			</ul>
+			<!-- Version condensée, visible uniquement sur les petits écrans -->
+			<p class="text-fluid-sm text-primary-green sm:hidden">
+				Du lundi au vendredi : 10h - 17h
+			</p>
 		</div>
+
 
 		<div class="flex-1/2">
 			<div class="inline-block">
@@ -179,6 +185,13 @@
 		<p class="text-primary-green text-fluid-xs"><small>Copyright &copy; 2024 - Tous droits réservés</small></p>
 		<p class="text-primary-green text-fluid-sm">
 			<small><a [routerLink]="['/mentions-legales']" class="text-primary-green underline email-style">Mentions légales</a></small>
+		</p>
+	</div>
+	<div class="text-fluid-xs text-primary-green text-center">
+		<p>
+			<a href="https://bression.alwaysdata.net/" target="_blank" class="underline  ">
+				Site développé par Nassima Bression
+			</a>
 		</p>
 	</div>
 

@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Router, NavigationEnd } from '@angular/router';
 import { NgClass } from '@angular/common';
-import {TimelineModule} from "primeng/timeline";
+
 
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [RouterOutlet, RouterLink, NgClass, TimelineModule],
+	imports: [RouterOutlet, RouterLink, NgClass],
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.css'],
 })
